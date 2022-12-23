@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS</title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztFQUNkLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSw2QkFBNkI7QUFDL0I7O0FBRUE7O0VBRUUsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBOzs7RUFHRSxnQ0FBZ0M7RUFDaEMsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHVCQUF1QjtFQUN2QixTQUFTO0VBQ1QsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsYUFBYTtFQUNiLFNBQVM7QUFDWDs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsa0JBQWtCO0VBQ2xCLG9CQUFvQjtBQUN0Qjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsU0FBUztFQUNULGdDQUFnQztFQUNoQyxTQUFTO0VBQ1QsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFdBQVc7RUFDWCxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGlCQUFpQjtBQUNuQjs7QUFFQTs7RUFFRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBOzs7Ozs7RUFNRSxnQkFBZ0I7RUFDaEIsYUFBYTtBQUNmOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFFQTs7RUFFRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBRUE7O0VBRUUsNEJBQTRCO0FBQzlCOztBQUVBOzs7O0VBSUUsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSw0RUFBNEU7RUFDNUUsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixhQUFhO0FBQ2Y7O0FBRUE7O0VBRUUsd0JBQXdCO0VBQ3hCLGdCQUFnQjtFQUNoQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxtQ0FBbUM7QUFDckM7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSwwQ0FBMEM7QUFDNUM7O0FBRUE7RUFDRSw0QkFBNEI7QUFDOUI7O0FBRUE7RUFDRSxnQ0FBZ0M7QUFDbEM7O0FBRUE7RUFDRSxtQ0FBbUM7QUFDckM7O0FBRUE7RUFDRSx3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLHdCQUF3QjtBQUMxQjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QiwwQkFBMEI7QUFDNUI7O0FBRUE7O0VBRUUsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNkJBQTZCO0FBQy9COztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsMEJBQTBCO0FBQzVCOztBQUVBO0VBQ0UsV0FBVztFQUNYLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsV0FBVztFQUNYLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSxjQUFjO0VBQ2QscUJBQXFCO0FBQ3ZCOztBQUVBOzs7Ozs7O0VBT0UsbUJBQW1CO0VBQ25CLGFBQWE7QUFDZjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixTQUFTO0VBQ1QsYUFBYTtFQUNiLGNBQWM7RUFDZCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxnQ0FBZ0M7RUFDaEMsY0FBYztFQUNkLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIseUJBQXlCO0VBQ3pCLDRCQUE0QjtFQUM1QixrQkFBa0I7RUFDbEIsa0NBQWtDO0VBQ2xDLGNBQWM7RUFDZCxxQkFBcUI7RUFDckIsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsc0JBQXNCO0FBQ3hCOztBQUVBOzs7Ozs7RUFNRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGdDQUFnQztFQUNoQyxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTs7RUFFRSxpQkFBaUI7QUFDbkI7O0FBRUE7Ozs7RUFJRSxnQkFBZ0I7RUFDaEIsYUFBYTtBQUNmOztBQUVBO0VBQ0Usb0JBQW9CO0FBQ3RCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsVUFBVTtBQUNaOztBQUVBO0VBQ0UsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFVBQVU7QUFDWjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGNBQWM7RUFDZCxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7O0VBRUUseUJBQXlCO0VBQ3pCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0Qiw2QkFBNkI7QUFDL0I7O0FBRUE7RUFDRSx5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIsdUJBQXVCO0VBQ3ZCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxTQUFTO0VBQ1Qsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsdUJBQXVCO0VBQ3ZCLFNBQVM7RUFDVCxlQUFlO0VBQ2YsU0FBUztFQUNULFVBQVU7RUFDVixnQkFBZ0I7RUFDaEIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTs7RUFFRSx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxpQkFBaUI7RUFDakIsY0FBYztFQUNkLGFBQWE7QUFDZjs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QixTQUFTO0VBQ1QsZUFBZTtFQUNmLG9CQUFvQjtFQUNwQixTQUFTO0VBQ1QsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixVQUFVO0VBQ1YsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsY0FBYztFQUNkLHFCQUFxQjtFQUNyQiw0RUFBNEU7RUFDNUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLDhCQUE4QjtFQUM5QiwrQkFBK0I7RUFDL0IsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6Qix3QkFBd0I7RUFDeEIsZUFBZTtFQUNmLDRFQUE0RTtFQUM1RSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSx3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSwrQkFBK0I7QUFDakM7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsY0FBYztFQUNkLDRFQUE0RTtFQUM1RSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7O0VBRUUsbUJBQW1CO0VBQ25CLGVBQWU7QUFDakI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIseUJBQXlCO0VBQ3pCLDRCQUE0QjtFQUM1QixrQkFBa0I7RUFDbEIsa0NBQWtDO0VBQ2xDLGNBQWM7RUFDZCxxQkFBcUI7RUFDckIsMEVBQTBFO0VBQzFFLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLDZCQUE2QjtBQUMvQiIsInNvdXJjZVJvb3QiOiIifQ== */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}/** Liber **/
+
+.hf-container,
+.markdown-body {
+  font-family: "Source Sans Pro","Segoe UI","Helvetica Neue","Open Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.3;
+  color: #212121;
+}
+
+:root {
+  --footerHeaderBorderColor: #1c1c1c;
+}
+.hf-container {
+  font-size: 0.75em;
+}
+.page-header:not(.simple) .hf-container {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--footerHeaderBorderColor);
+}
+.page-footer:not(.simple) .hf-container {
+  padding-top: 2px;
+  border-top: 1px solid var(--footerHeaderBorderColor);
+}
+
+.footnotes {
+  font-size: 0.75em;
+  opacity: 0.9;
+}
+.footnotes > hr:first-of-type {
+  width: 250px;
+  height: 1px;
+  background: var(--footerHeaderBorderColor);
+}
+.footnotes > ol > li > p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.footnotes .footnote-back {
+  color: #212121;
+}
+.markdown-body a.footnote-ref {
+  color: #212121;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  color: #282828;
+}
+
+.markdown-body h1 {
+  font-size: 1.8em;
+}
+.markdown-body h2 {
+  font-size: 1.6em;
+}
+.markdown-body h3 {
+  font-size: 1.4em;
+}
+.markdown-body h4,
+.markdown-body h5 {
+  font-size: 1.2em;
+}
+.markdown-body h6 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.markdown-body hr {
+  background-color: #d7d8d9;
+  height: 1px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+}
+
+/*# sourceURL=webpack://./src/renderer/assets/themes/export/liber.theme.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9yZW5kZXJlci9hc3NldHMvdGhlbWVzL2V4cG9ydC9saWJlci50aGVtZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsWUFBWTs7QUFFWjs7RUFFRSxzSEFBc0g7RUFDdEgsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUVBO0VBQ0Usa0NBQWtDO0FBQ3BDO0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLG1CQUFtQjtFQUNuQix1REFBdUQ7QUFDekQ7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixvREFBb0Q7QUFDdEQ7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsWUFBWTtBQUNkO0FBQ0E7RUFDRSxZQUFZO0VBQ1osV0FBVztFQUNYLDBDQUEwQztBQUM1QztBQUNBO0VBQ0UsZUFBZTtFQUNmLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsY0FBYztBQUNoQjtBQUNBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7O0VBTUUsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7O0VBRUUsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxjQUFjO0VBQ2QsZ0JBQWdCO0FBQ2xCOztBQUVBOztFQUVFLG1CQUFtQjtFQUNuQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsV0FBVztBQUNiOztBQUVBOztFQUVFLHlCQUF5QjtFQUN6Qix5QkFBeUI7RUFDekIsZ0JBQWdCO0FBQ2xCIiwic291cmNlUm9vdCI6IiJ9 */</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="course-notes">Course Notes</h1>
+<p>The course is split into two components, components which are classwork and homework.</p>
+<h2 class="atx" id="folder-structure">Folder Structure</h2>
+<p>Home Folder (Jeffrey)</p>
+<ul>
+<li><p>SEIc60</p>
+<ul>
+<li><p>coursework</p>
+</li>
+<li><p>homework</p>
+</li>
+<li><p>notes</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="atx" id="principles">Principles</h2>
+<ul>
+<li>Dry (Do not repeat your code )</li>
+<li>Code is made for other humans</li>
+</ul>
+<p>Required software for  <a href="https://gist.github.com/didoarellano/5cb8a0e899363e0264fcdfb1247a8d01">SEIC60 Unit 1 Installfest - Windows WSL2 · GitHub</a></p>
+<h2 class="atx" id="shortcuts-for-vs-code">Shortcuts for VS Code</h2>
+<p>code .</p>
+<h1 class="atx" id="note-taking-copy">Note taking copy</h1>
+<p>copying and pasting from various files in coursework into the one thing here:</p>
+<h1 class="atx" id="introduction-to-js">Introduction to JS</h1>
+<p>HTML = Structure
+CSS = Presentation of structure
+JS = Behaviour</p>
+<h1 class="atx" id="diagramming-with-mermaid">Diagramming with Mermaid</h1>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1671186573366" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="146" style="max-width: 187.25px;" viewBox="0 0 187.25 146"><style>#mermaid-1671186573366 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1671186573366 .error-icon{fill:#552222;}#mermaid-1671186573366 .error-text{fill:#552222;stroke:#552222;}#mermaid-1671186573366 .edge-thickness-normal{stroke-width:2px;}#mermaid-1671186573366 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1671186573366 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1671186573366 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1671186573366 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1671186573366 .marker{fill:#333333;stroke:#333333;}#mermaid-1671186573366 .marker.cross{stroke:#333333;}#mermaid-1671186573366 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1671186573366 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1671186573366 .cluster-label text{fill:#333;}#mermaid-1671186573366 .cluster-label span{color:#333;}#mermaid-1671186573366 .label text,#mermaid-1671186573366 span{fill:#333;color:#333;}#mermaid-1671186573366 .node rect,#mermaid-1671186573366 .node circle,#mermaid-1671186573366 .node ellipse,#mermaid-1671186573366 .node polygon,#mermaid-1671186573366 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1671186573366 .node .label{text-align:center;}#mermaid-1671186573366 .node.clickable{cursor:pointer;}#mermaid-1671186573366 .arrowheadPath{fill:#333333;}#mermaid-1671186573366 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1671186573366 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1671186573366 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1671186573366 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1671186573366 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1671186573366 .cluster text{fill:#333;}#mermaid-1671186573366 .cluster span{color:#333;}#mermaid-1671186573366 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1671186573366 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g transform="translate(0, 0)"><marker id="flowchart-pointEnd" class="marker flowchart" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="flowchart-pointStart" class="marker flowchart" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="flowchart-circleEnd" class="marker flowchart" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="flowchart-circleStart" class="marker flowchart" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="flowchart-crossEnd" class="marker cross flowchart" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="flowchart-crossStart" class="marker cross flowchart" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M31.40625,58.651340996168585L35.572916666666664,53.54278416347382C39.739583333333336,48.43422733077906,48.072916666666664,38.217113665389526,56.40625,33.10855683269477C64.73958333333333,28,73.07291666666667,28,77.23958333333333,28L81.40625,28" id="L-a-b-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-a LE-b" style="fill:none;" marker-end="url(#flowchart-pointEnd)"></path><path d="M31.40625,87.34865900383141L35.572916666666664,92.45721583652619C39.739583333333336,97.56577266922095,48.072916666666664,107.78288633461047,56.489583333333336,112.89144316730524C64.90625,118,73.40625,118,77.65625,118L81.90625,118" id="L-a-c-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-a LE-c" style="fill:none;" marker-end="url(#flowchart-pointEnd)"></path><path d="M105.328125,28L109.49479166666667,28C113.66145833333333,28,121.99479166666667,28,130.328125,33.07292327203551C138.66145833333334,38.14584654407102,146.99479166666666,48.29169308814204,151.16145833333334,53.36461636017756L155.328125,58.43753963221306" id="L-b-d-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-b LE-d" style="fill:none;" marker-end="url(#flowchart-pointEnd)"></path><path d="M104.828125,118L109.078125,118C113.328125,118,121.828125,118,130.24479166666666,112.92707672796449C138.66145833333334,107.85415345592897,146.99479166666666,97.70830691185796,151.16145833333334,92.63538363982245L155.328125,87.56246036778694" id="L-c-d-0" class=" edge-thickness-normal edge-pattern-solid flowchart-link LS-c LE-d" style="fill:none;" marker-end="url(#flowchart-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default default" id="flowchart-a-9915" transform="translate(19.703125, 73)"><rect class="basic label-container" style="" rx="0" ry="0" x="-11.703125" y="-20" width="23.40625" height="40"></rect><g class="label" style="" transform="translate(-4.203125, -12.5)"><foreignObject width="8.40625" height="25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">a</span></div></foreignObject></g></g><g class="node default default" id="flowchart-b-9916" transform="translate(93.3671875, 28)"><rect class="basic label-container" style="" rx="0" ry="0" x="-11.9609375" y="-20" width="23.921875" height="40"></rect><g class="label" style="" transform="translate(-4.4609375, -12.5)"><foreignObject width="8.921875" height="25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">b</span></div></foreignObject></g></g><g class="node default default" id="flowchart-c-9917" transform="translate(93.3671875, 118)"><rect class="basic label-container" style="" rx="0" ry="0" x="-11.4609375" y="-20" width="22.921875" height="40"></rect><g class="label" style="" transform="translate(-3.9609375, -12.5)"><foreignObject width="7.921875" height="25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">c</span></div></foreignObject></g></g><g class="node default default" id="flowchart-d-9918" transform="translate(167.2890625, 73)"><rect class="basic label-container" style="" rx="0" ry="0" x="-11.9609375" y="-20" width="23.921875" height="40"></rect><g class="label" style="" transform="translate(-4.4609375, -12.5)"><foreignObject width="8.921875" height="25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="nodeLabel">d</span></div></foreignObject></g></g></g></g></g></svg></div>
+<p><a href="https://mermaid-js.github.io/mermaid/syntax/flowchart.html">Flowcharts - Basic Syntax | Mermaid</a></p>
+<h1 class="atx" id="js-tools">JS Tools</h1>
+<h2 class="atx" id="chrome-inspector">Chrome Inspector</h2>
+<p>Can use the console to run JS</p>
+<h2 class="atx" id="js-broswer-tools">JS broswer tools</h2>
+<p>alert() // shows a popup with the value
+console.log() // shows message in console
+prompt('How are you today?') // similar to alert with a pop up box</p>
+<h2 class="atx" id="vs-code">VS Code</h2>
+<ul>
+<li>Can create a boiler plate for HTML files with '! and TAB'</li>
+<li>Can use lorem to generate place holder text</li>
+<li>Use control k to comment put multiple lines of code</li>
+</ul>
+<h1 class="atx" id="javascript">Javascript</h1>
+<h2 class="atx" id="data-types">Data Types</h2>
+<ul>
+<li>Text/Strings</li>
+<li>Numbers e.g console.log(42 + 42)</li>
+</ul>
+<p>the typeof function can be used to determine the type of</p>
+<h2 class="atx" id="primitive-basics">Primitive (basics)</h2>
+<h3 class="atx" id="strings">strings</h3>
+<ul>
+<li>strings be used by enclosing text in ' " or <code>e.g **console.log('I am a string') console.log("I am a string") console.log(</code>I am a strong`)
+**</li>
+</ul>
+<h3 class="atx" id="numbers">numbers</h3>
+<p>special numbers
+console.log(Infinity)
+console.log(NaN)
+console.log(100_000_000) // underscores can be used to make numbers humman readable</p>
+<h3 class="atx" id="boolean">boolean</h3>
+<p>Can only be true or false</p>
+<p>console.log(true)
+console.log(false)</p>
+<h3 class="atx" id="undefined">undefined</h3>
+<p>console.log(undefined)</p>
+<h3 class="atx" id="nulll">nulll</h3>
+<p>console.log(null) // convention is to use it as a place holder that will set another variables</p>
+<p>// technically and object and can break the web if changed</p>
+<h2 class="atx" id="container-more-complex">Container (more complex)</h2>
+<h1 class="atx" id="variables">Variables</h1>
+<p>3 types const, let and var
+const firstName = 'Tonto'</p>
+<p>Const is only used for constats otherwise it wont be able to be changed later on</p>
+<p>let can be used for things that change</p>
+<p>Generally use const for things</p>
+<h2 class="atx" id="rules-for-js-variables">rules for js variables</h2>
+<p>alphanumeric, dollar sign or underline</p>
+<p>cant start a variable name with a number</p>
+<p>cant use js reserved words such as let. See <a href="https://www.w3schools.com/js/js_reserved.asp">JavaScript Reserved Words</a></p>
+<h2 class="atx" id="parts-of-a-variable">Parts of a variable</h2>
+<ol>
+<li>decelration e.g let blah</li>
+<li>initialise value e.g. blah = 'example'</li>
+</ol>
+<h1 class="atx" id="dry-principle">DRY principle</h1>
+<p>Don't repeat your code</p>
+<h1 class="atx" id="operators-eg--or-minus-are-binary-types-that-need-to-values">Operators (e.g. + or minus) are binary types that need to values</h1>
+<p>e.g (21 * 23)</p>
+<h2 class="atx" id="special-operators">Special operators</h2>
+<p>% = checks for remainder and can be used for even/odd
+0 is even</p>
+<h1 class="atx" id="escape-characters">Escape characters</h1>
+<p>can use \ to create white space and ensure that a ' within a string doesnt blow it up</p>
+<h1 class="atx" id="and39-using-backticks-for-adding-variables-within-one-string-without-concatinating-and-anything-else-that-returns-a-value">' using backticks for adding variables within one string (without concatinating) and anything else that returns a value</h1>
+<p><a href="https://en.wikipedia.org/wiki/String_interpolation">String interpolation - Wikipedia</a></p>
+<p>const dogname = 'dabbs'
+console.log(<code>Good boy ${dogname}</code>)</p>
+<h2 class="atx" id="js-error-testing">JS error testing</h2>
+<p>type error means its the wrong variable type</p>
+<h3 class="atx" id="operational-issues">Operational issues</h3>
+<p>console.log(40 + '2') // is 402
+console.log (1 * 'one') // NaN</p>
+<p>console.log(0.1 + 0.2) // since all numbers are a float in js it will technicaly be something a bit different</p>
+<h2 class="atx" id="control-flow">Control flow</h2>
+<p>Goes from top to bottom normally. There are ways to determine where it changes depending on conditions.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if...else - JavaScript | MDN</a></p>
+<h2 class="atx" id="flow-charts">Flow charts</h2>
+<p>diamond = decision</p>
+<p>Map it out by diagraming it</p>
+<h3 class="atx" id="conditional-statments-and-looops">conditional statments and looops</h3>
+<h3 class="atx" id="loose-equality">Loose equality</h3>
+<p>console.log(age == '32) // result true</p>
+<p>console.log(age === '21') // best to use strict equality</p>
+<ul>
+<li>Checks the values and data types // result false</li>
+</ul>
+<h2 class="atx" id="logical-operators">logical operators</h2>
+<h3 class="atx" id="binary">binary</h3>
+<p>&amp;&amp; AND</p>
+<p>|| OR</p>
+<h1 class="atx" id="univary">univary</h1>
+<p>! / is not equal to</p>
+<p>console.log(!(42 &gt; 40))</p>
+<h2 class="atx" id="donand39t-use-mathematical-functions-for-precise-finacial-calculations">Don't use mathematical functions for precise finacial calculations</h2>
+<p>can use a library instead.</p>
+<p>Functions</p>
+<h2 class="atx" id="creating-names">Creating names</h2>
+<ul>
+<li>Follows the same rules as variables (alphanumeric)</li>
+</ul>
+<h2 class="atx" id="creating-a-function">Creating a function</h2>
+<pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> <span class="token function-variable function">way2_calculateTax</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// a scope is created when the curly brackets are made</span>
+    <span class="token keyword">const</span> tax <span class="token operator">=</span> <span class="token number">40000</span> <span class="token operator">*</span> <span class="token number">0.12</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tax<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">way2_calculateTax</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// calls function also known as execute or invoke</span></code></pre>
+<h3 class="atx" id="parameters-and-arguments">Parameters and Arguments</h3>
+<pre><code class="fenced-code-block">function demo = function (parametter) {}
+demo(argument)</code></pre>
+<h3 class="atx" id="functions-behaviour">Functions behaviour</h3>
+<p>Hoisted functions</p>
+<ul>
+<li>happens during a regular function</li>
+</ul>
+<p>Will move the function to the start of the script (functionaly)
+So you can call it anywhere in the program</p>
+<p>Function statments can be overwitten by other functions (regular functions not const functions</p>
+<p>Const are block scopes (no leackage of variables))</p>
+<pre><code class="fenced-code-block language-js"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">leaky</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'leaks out the block'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> <span class="token keyword">function</span> <span class="token function-variable function">noLeaky</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>'no leakage<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">leaky</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">noLeaky</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<h2 class="atx" id="loops-and-operators">Loops and operators</h2>
+<p>[[[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment%5D%5D%5D(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment%5D%5D)">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment]]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment%5D%5D)</a></p>
+<pre><code class="fenced-code-block language-js"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">100</span>
+num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
+num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token comment">// ++ Is a increment operator</span>
+num<span class="token operator">++</span> <span class="token comment">// A uni operator that only works on what operator, it is a posfix operator </span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
+num<span class="token operator">++</span>
+<span class="token comment">// -- Is a descrment opperator</span>
+
+<span class="token comment">// compound addition assignment (takes a variable and adds the number to it)</span>
+num <span class="token operator">+=</span> <span class="token number">5</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment">// will = 105</span>
+<span class="token comment">// similar thing for -</span></code></pre>
+<h2 class="atx" id="for-loops">For loops</h2>
+<pre><code class="fenced-code-block language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span>initialisation<span class="token punctuation">,</span> conditon<span class="token punctuation">,</span> increment<span class="token operator">/</span>decrement<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">do</span> stuff
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li>Initalisation only happens once.</li>
+<li>Conditional checks if the variable meats the condition till it is false</li>
+<li>the incriment/decrement loops till the condition is false</li>
+</ul>
+<h3 class="atx" id="infinite-loops">Infinite loops</h3>
+<p>If trying to meet a conditional that can't be evaluated, it may stuff it up</p>
+<h2 class="atx" id="for-vs-while-loops">for vs while loops</h2>
+<h3 class="atx" id="while-loops">while loops</h3>
+<ul>
+<li>Are more dangerous as its easier to enter an infinite loop</li>
+<li>Can be useful if your not sure about what a value is or in games where your asking for input, generating stuff etc</li>
+</ul>
+<pre><code class="fenced-code-block language-javascript"><span class="token keyword">let</span> gameOver <span class="token operator">=</span> <span class="token boolean">false</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>gameOver<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> userInput <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'Quit (y/n)'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>useInput <span class="token operator">===</span> <span class="token string">'yes'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        gameOver <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'keep doing game stuff'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 1000 lines</span>
+<span class="token punctuation">}</span></code></pre>
+<pre><code class="fenced-code-block language-js"><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> quit <span class="token operator">=</span> <span class="token function">confirm</span><span class="token punctuation">(</span><span class="token string">' Do you want to quit'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>quit<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">break</span>
+    <span class="token punctuation">}</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Keep playing'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<pre><code class="fenced-code-block language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">20</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">3</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">continue</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span></code></pre>
+<h1 class="atx" id="array-data-types-">Array data types []</h1>
+<ul>
+<li>A data type that contains more elements (aka as lists in other languages)</li>
+<li>arrays are initialised with [] and elements are separated by commas ,</li>
+<li>arrays are ordered lists, starting with 0 (js is a 0 based index)</li>
+<li>you can determine the amount of elements by using the property .length</li>
+<li>If you use let with an array it can be overridden</li>
+<li>JS doesn't care about types and can contain strings and numbers (opposed to other languages that need you to define if it will have numbers etc)</li>
+</ul>
+<h2 class="atx" id="let-vs-const">let vs const</h2>
+<pre><code class="fenced-code-block">let satchel = [
+    'gold'
+    'coins',
+]
+console.log(satchel) // gold and coins
+let satchel = [
+    bag, 
+]
+console.log(satchel) // you've lost your bag</code></pre>
+<h2 class="atx" id="indexes">indexes</h2>
+<pre><code class="fenced-code-block language-js"></code></pre>
+<h2 class="atx" id="looping-an-array-for-loop-if-access-to-index-and39s-are-neded">looping an array (for loop if access to index #'s are neded)</h2>
+<pre><code class="fenced-code-block">for (let i = 0; i &lt; satchel.length; i++&gt;) { // never assume the length of an array
+    console.log(i)
+    console.log(satchel[i])</code></pre>
+<p>You can not assume that start of an array</p>
+<ul>
+<li><p>To get the last item in an array</p>
+<pre><code class="fenced-code-block">console.log(satchel[satchel.lenght - 1])</code></pre>
+</li>
+</ul>
+<h2 class="atx" id="the-for--of-loop-prefered-if-you-only-need-access-to-the-elements">the for .. of loop (prefered if you only need access to the elements)</h2>
+<pre><code class="fenced-code-block">for (let element of satchel) {
+    console.log(element)
+}</code></pre>
+<h3 class="atx" id="checking-for-arrays">checking for arrays</h3>
+<ul>
+<li>can't use typeof because it'll return it as an object instead of an array</li>
+</ul>
+<h1 class="atx" id="nested-arrays">Nested arrays</h1>
+<p>An array within an array</p>
+<pre><code class="fenced-code-block">const pairs = [
+    ['Harold', 'Kumar'],
+    ['Ren', 'Stimpy']
+]
+console.log(pairs[1][1])</code></pre>
+<ul>
+<li>Can set array elements with same syntax</li>
+</ul>
+<h2 class="atx" id="looping-nested-array">looping nested array</h2>
+<pre><code class="fenced-code-block">for (let pair of pairs_ {
+    for (let character of pair) {
+        console.log(character)
+    }
+}</code></pre>
+<ul>
+<li><p>A common thing in tests is nested arrays within nested arrays</p>
+<pre><code class="fenced-code-block">for (let pair of pairs) {
+  for (let characer of pair) {
+      console.log{character}
+  }
+}</code></pre>
+</li>
+</ul>
+<h1 class="atx" id="js-objects">JS Objects</h1>
+<ul>
+<li>objects give meta info</li>
+<li>Using curly brackets create objects (when allocated to a variable it is not a code block</li>
+<li>Can be any data type or object</li>
+<li>Has a kay: value pair</li>
+</ul>
+<pre><code class="fenced-code-block">let wolfy = {
+    name: 'wolfy',
+    species: 'wolf',
+    age: 16 // can be any type of data
+}</code></pre>
+<h2 class="atx" id="accessing-nested-data">Accessing nested data</h2>
+<ul>
+<li><p>will need a mix of bracket and . access</p>
+<pre><code class="fenced-code-block">console.log(car.colours[0])
+console.log(car.engine.hp)
+console.log(car.engine.sounds[2])</code></pre>
+</li>
+</ul>
+<h2 class="atx" id="looping-over-objects">looping over objects</h2>
+<ul>
+<li>can use for in (instead of for of for arrays) to loops objects</li>
+<li>use the type of data to access the right infomation</li>
+</ul>
+<pre><code class="fenced-code-block">for (let propertyName in car) {
+    console.log(PropertyName)
+    console.log(car[propertyName])
+    console.log(car.propertyName) // this wont show the proper thing, because its looking for something called property name within car. use bracket access and target the thing properly
+}</code></pre>
+<ul>
+<li><p>Can use key to get the property values or specfic values of the property</p>
+<pre><code class="fenced-code-block">console.log(key)
+console.log(car[key]])</code></pre>
+</li>
+</ul>
+<h2 class="atx" id="test-if-an-earry-is-an-arry">test if an earry is an arry</h2>
+<p>typeof</p>
+<h1 class="atx" id="strings-arrays-andamp-higher-order-functions">Strings, Arrays &amp; Higher order functions</h1>
+<h2 class="atx" id="string-methods-js">String Methods (JS)</h2>
+<pre><code class="fenced-code-block">console.log = ' tonto   '
+console.log(name.length)
+console.log(name.trim().length)</code></pre>
+<ul>
+<li>Need to use trim to remove backspaces otherwise it will count the white spaces</li>
+<li>Reading docs is important e.g 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim%5D">[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim]</a>(MDN Docs)</li>
+<li>Should know if something returns or modifies a value</li>
+<li>Syntax shows the other forms (in mdn docs) and arguments</li>
+<li>browsers tend to treat js more or less the same, as opposed to css which is a bit tricker</li>
+<li>keep in mind what it returns</li>
+</ul>
+<pre><code class="fenced-code-block">console dog = 'Tonto is a good boy!'
+console.log(dog.endsWith('!', 5))</code></pre>
+<h2 class="atx" id="useful-methods">Useful methods</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes">String.prototype.includes() - JavaScript | MDN</a></li>
+<li>replace()</li>
+<li>split(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">String.prototype.split() - JavaScript | MDN</a>)</li>
+<li>String methods tend to be easier then array methods
+*.at()</li>
+</ul>
+<pre><code class="fenced-code-block">const geneString = 'rock rap pop punk country'
+
+const gene = geneString.split
+console.log(geneString.split(' '))
+console.log(gene)</code></pre>
+<h2 class="atx" id="other-methods">Other methods</h2>
+<ul>
+<li>slice can be used to copy and paste</li>
+</ul>
+<h2 class="atx" id="methods-to-use-with-caution">Methods to use with caution</h2>
+<ul>
+<li>shift</li>
+<li>unshift</li>
+</ul>
+<h1 class="atx" id="method-defintion">Method defintion</h1>
+<ul>
+<li><p>Methods are functions that are defined to objects</p>
+<pre><code class="fenced-code-block">const obj = {
+  name: x,
+  bar: function() // how methods at
+  x: split()
+}</code></pre>
+</li>
+</ul>
+<h1 class="atx" id="array-methods">Array methods</h1>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array - JavaScript | MDN</a></li>
+</ul>
+<h2 class="atx" id="mutate-array-will-be-changed-directly">mutate (array will be changed directly)</h2>
+<h3 class="atx" id="adding-to-an-array">Adding to an array</h3>
+<p>Can make a variable and then add it or use push</p>
+<p>Use pop to remove last elements</p>
+<h2 class="atx" id="immutable-wont-change-the-array">immutable (wont change the array)</h2>
+<p>x</p>
+<h1 class="atx" id="higher-order-functions-andamp-call-back">Higher order functions &amp; call back</h1>
+<ul>
+<li>calll a function within a function</li>
+</ul>
+<pre><code class="fenced-code-block">const fn1 = function () {
+    console.log('hi from fn1')
+}
+
+const fn2 = function (param) {
+    console.log(typeof param)
+}
+fn2(fn1) // has the reference to the function itself</code></pre>
+<pre><code class="fenced-code-block">const fn1 = function () {
+    console.log('hi from fn1')
+}
+
+const fn2 = function (param) {
+    param() // a call back function
+}</code></pre>
+<ul>
+<li>Important to understand that a lot of third party libraries expect a function</li>
+<li>Example of this is having a button that is assigned a function to run the function</li>
+</ul>
+<pre><code class="fenced-code-block">fn2(function) () {
+    console.log('Hello from annonymous function')
+}</code></pre>
+<ul>
+<li>Annonymus function: Generally used as a oneoff function</li>
+</ul>
+<h2 class="atx" id="use-case-for-map-function-more-array-stuff">Use case for map function (more array stuff)</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">Array.prototype.map() - JavaScript | MDN</a></p>
+<p>e.g one method using for of</p>
+<pre><code class="fenced-code-block">const fruits = ['apple', 'banana','mango,'avo'] {
+    let cappped = []
+    for (let fruit of fruitsArray) {
+
+    })
+}
+
+arrray.forEach</code></pre>
+<h3 class="atx" id="new-loop-for-each--array-method">new loop (for each) + array method</h3>
+<pre><code class="fenced-code-block">const fruits = ['apple', 'banana','mango,'avo']</code></pre>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">Array.prototype.forEach() - JavaScript | MDN</a></p>
+<h3 class="atx" id="map">map</h3>
+<p>babab.map</p>
+<h2 class="atx" id="declerative-vs-procedural-vs-impertive-setup-by-steup">Declerative vs Procedural vs Impertive (setup by steup)</h2>
+<p>Decelerative: Tells Javascript what to do</p>
+<p>let upperCasedFruits = fruits.map(upperCaseFruits)</p>
+<p>// creates the array</p>
+<h3 class="atx" id="filter-method">filter method</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">Array.prototype.filter() - JavaScript | MDN</a></p>
+<p>Uses truthy and faly to determine if it should show (from return)</p>
+<p>return</p>
+<h2 class="atx" id="real-work-example">real work example</h2>
+<pre><code class="fenced-code-block">const cities = [
+  { name: 'Sydney', population: 5000000, landMarks: 10000 },
+  { name: 'Melbourne', population: 4800000, landMarks: 9000 },
+  { name: 'Adelaide', population: 1300000, landMarks: 2000 },
+  { name: 'Manila', population: 1800000, landMarks: 2500 },
+]</code></pre>
+<ul>
+<li><p>can use map to grab a bunch of city names without creating a looop</p>
+<pre><code class="fenced-code-block">const cityName = cities.map (function (city)) {
+  return. city.name
+}
+const mCities = cities.filter (function () {
+  return city.name.startsWith('m')
+}</code></pre>
+</li>
+</ul>
+<p>Using map function or map function can be combined with string methods to find sotuff</p>
+<h1 class="atx" id="html">HTML</h1>
+<ul>
+<li><p>Giv# HTML</p>
+<ul>
+<li><p>Gives meaning semantic to structure</p>
+</li>
+<li><p>Composed of elements denoted by tags</p>
+</li>
+<li><p>Some elments will look the same as any other tag if no attributes are given</p>
+<pre><code class="fenced-code-block">&lt;a&gt;
+a
+&lt;/a&gt;</code></pre>
+</li>
+<li><p>No attributes will show an aper tag as just text</p>
+</li>
+<li><p>Atrributes are space seperated</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="fenced-code-block">Paragraphs</code></pre>
+<h2 class="atx" id="structure">Structure</h2>
+<ul>
+<li><p>IS defined by nesting tags</p>
+<pre><code class="fenced-code-block">&lt;em&gt; - ephasis tags &lt;/strong&gt; - Bold
+&lt;strong&gt;Text HEere&lt;/srong&gt; - Italics</code></pre>
+</li>
+</ul>
+<h2 class="atx" id="html-element">HTML element</h2>
+<pre><code class="fenced-code-block">* &lt;html lang="en"&gt;
+* &lt;meta charset="UTF"&gt;</code></pre>
+<ul>
+<li><p>can only have head and body tag within in it</p>
+</li>
+<li><p>head is for meta data that you dont want to render</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML: HyperText Markup Language | MDN</a></p>
+<h1 class="atx" id="types-of-tags">Types of tags</h1>
+</li>
+<li><p>Empty tags : Tags that are self closing e.g.<br>(technically the final tag is not needed but this syntax is better since its needed for react)</p>
+</li>
+<li><p>Content tags: Will have things within them</p>
+<h1 class="atx" id="image-tag">Image tag</h1>
+</li>
+<li><p>Alt attributes can be used by screen readers to hear the content.</p>
+</li>
+<li><p>okace holder images (can use place img)</p>
+</li>
+<li><p><a href="https://placeimg.com/">https://placeimg.com/</a></p>
+</li>
+<li><p><a href="https://placeholder.com/">https://placeholder.com/</a></p>
+<h1 class="atx" id="inline-vs-block-level-elements">Inline vs Block level elements</h1>
+</li>
+<li><p>In inspector: block level has margin (orange)</p>
+</li>
+<li><p>In insectpr: blue</p>
+</li>
+<li><p>Block level elements can contain other block level elements</p>
+</li>
+<li><p>Validator will check if nesting is valid or not</p>
+<p>tags</p>
+<h2 class="atx" id="keyboard-shortcuts">Keyboard shortcuts</h2>
+<p>ul &gt; li &gt;*5</p>
+<p>ul&gt;li*3&gt;p</p>
+<p>ul*5</p>
+<p><a href="https://code.visualstudio.com/docs/editor/emmet">Emmet in Visual Studio Code</a></p>
+<h2 class="atx" id="semantic-tags">Semantic Tags</h2>
+<p>Important for screen readers, regular browsers and makes it easily to read</p>
+<p>Choosing a semantic tag: <a href="https://camo.githubusercontent.com/27fb2038ebff5efe9f9e5c0f87c05dd80e25cf782f065d15574688dbe965fa60/68747470733a2f2f692e696d6775722e636f6d2f615937574e386b2e706e67">https://camo.githubusercontent.com/27fb2038ebff5efe9f9e5c0f87c05dd80e25cf782f065d15574688dbe965fa60/68747470733a2f2f692e696d6775722e636f6d2f615937574e386b2e706e67</a></p>
+<h1 class="atx" id="syntax-cases">Syntax cases</h1>
+<h2 class="atx" id="css-selectors">CSS Selectors</h2>
+<p>Choose a selector &gt; th styles that u want to style
+sheet</p>
+<h2 class="atx" id="adding-a-style">Adding a style</h2>
+<h1 class="atx" id="css-selectors-1">CSS Selectors</h1>
+<p><a href="https://www.w3schools.com/cssref/css_selectors.php">CSS Selectors Reference</a></p>
+<p><a href="https://flukeout.github.io/">https://flukeout.github.io/</a></p>
+<h2 class="atx" id="specificity">Specificity</h2>
+<p>veg. a {
+color:green
+}</p>
+<p>ul &gt; li &gt; a {
+color: black;
+}</p>
+<h2 class="atx" id="the-point-system">The point system</h2>
+<p><a href="https://stuffandnonsense.co.uk/archives/images/css-specificity-wars.png">https://stuffandnonsense.co.uk/archives/images/css-specificity-wars.png</a></p>
+<p><a href="https://stuffandnonsense.co.uk/archives/css_specificity_wars.html">CSS Specificity Wars |&nbsp; Blog archives | Stuff &amp; Nonsense, Wales, UK</a></p>
+<p><a href="https://getbem.com/">https://getbem.com/</a></p>
+<p><a href="https://specificity.keegan.st/">https://specificity.keegan.st/</a></p>
+<h2 class="atx" id="choosing-colours">Choosing colours</h2>
+<pre><code class="fenced-code-block">color: Rule of text use hex for static colors and rgba when you need transparency</code></pre>
+<h2 class="atx">Fonts</h2>
+<h3 class="atx" id="default-fonts">Default fonts</h3>
+</li>
+<li><p>There are sanes serif and serif</p>
+</li>
+<li><p>can use backup fonts</p>
+<p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.php">CSS Web Safe Fonts</a> <a href="https://systemfontstack.com/">https://systemfontstack.com/</a></p>
+<h3 class="atx" id="custom-fonts">Custom fonts</h3>
+<p>Uses</p>
+<p>font-face</p>
+</li>
+<li><p>Start with these attributes to look good via body</p>
+<p>14px (min)
+line height 1.5es meaning semantic to structure</p>
+</li>
+<li><p>Composed of elements denoted by tags</p>
+</li>
+<li><p>Some elments will look the same as any other tag if no attributes are given</p>
+<pre><code class="fenced-code-block">&lt;a&gt;
+a
+&lt;/a&gt;</code></pre>
+</li>
+<li><p>No attributes will show an aper tag as just text</p>
+</li>
+<li><p>Atrributes are space seperated</p>
+</li>
+</ul>
+<pre><code class="fenced-code-block">Paragraphs</code></pre>
+<h2 class="atx" id="structure-1">Structure</h2>
+<ul>
+<li><p>IS defined by nesting tags</p>
+<pre><code class="fenced-code-block">&lt;em&gt; - ephasis tags &lt;/strong&gt; - Bold
+&lt;strong&gt;Text HEere&lt;/srong&gt; - Italics</code></pre>
+</li>
+</ul>
+<h2 class="atx" id="html-element-1">HTML element</h2>
+<pre><code class="fenced-code-block">* &lt;html lang="en"&gt;
+* &lt;meta charset="UTF"&gt;</code></pre>
+<ul>
+<li>can only have head and body tag within in it</li>
+<li>head is for meta data that you dont want to render</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML: HyperText Markup Language | MDN</a></li>
+</ul>
+<h1 class="atx" id="types-of-tags-1">Types of tags</h1>
+<ul>
+<li>Empty tags : Tags that are self closing e.g.<br>(technically the final tag is not needed but this syntax is better since its needed for react)</li>
+<li>Content tags: Will have things within them</li>
+</ul>
+<h1 class="atx" id="image-tag-1">Image tag</h1>
+<ul>
+<li>Alt attributes can be used by screen readers to hear the content.</li>
+<li>okace holder images (can use place img)</li>
+<li><a href="https://placeimg.com/">https://placeimg.com/</a></li>
+<li><a href="https://placeholder.com/">https://placeholder.com/</a></li>
+</ul>
+<h1 class="atx" id="inline-vs-block-level-elements-1">Inline vs Block level elements</h1>
+<ul>
+<li>In inspector: block level has margin (orange)</li>
+<li>In insectpr: blue</li>
+<li>Block level elements can contain other block level elements</li>
+<li>Validator will check if nesting is valid or not</li>
+</ul>
+<p>tags</p>
+<h2 class="atx" id="keyboard-shortcuts-1">Keyboard shortcuts</h2>
+<p>ul &gt; li &gt;*5</p>
+<p>ul&gt;li*3&gt;p</p>
+<p>ul*5</p>
+<p><a href="https://code.visualstudio.com/docs/editor/emmet">Emmet in Visual Studio Code</a></p>
+<h2 class="atx" id="semantic-tags-1">Semantic Tags</h2>
+<p>Important for screen readers, regular browsers and makes it easily to read</p>
+<p>Choosing a semantic tag: <a href="https://camo.githubusercontent.com/27fb2038ebff5efe9f9e5c0f87c05dd80e25cf782f065d15574688dbe965fa60/68747470733a2f2f692e696d6775722e636f6d2f615937574e386b2e706e67">https://camo.githubusercontent.com/27fb2038ebff5efe9f9e5c0f87c05dd80e25cf782f065d15574688dbe965fa60/68747470733a2f2f692e696d6775722e636f6d2f615937574e386b2e706e67</a></p>
+<h1 class="atx" id="syntax-cases-1">Syntax cases</h1>
+<h2 class="atx" id="css-selectors-2">CSS Selectors</h2>
+<p>Choose a selector &gt; th styles that u want to style
+sheet</p>
+<h2 class="atx" id="adding-a-style-1">Adding a style</h2>
+<h1 class="atx" id="css-selectors-3">CSS Selectors</h1>
+<p><a href="https://www.w3schools.com/cssref/css_selectors.php">CSS Selectors Reference</a></p>
+<p><a href="https://flukeout.github.io/">https://flukeout.github.io/</a></p>
+<h2 class="atx" id="specificity-1">Specificity</h2>
+<p>veg. a {
+ color:green
+}</p>
+<p>ul &gt; li &gt; a {
+ color: black;
+}</p>
+<h2 class="atx" id="the-point-system-1">The point system</h2>
+<p><a href="https://stuffandnonsense.co.uk/archives/images/css-specificity-wars.png">https://stuffandnonsense.co.uk/archives/images/css-specificity-wars.png</a></p>
+<p><a href="https://stuffandnonsense.co.uk/archives/css_specificity_wars.html">CSS Specificity Wars |&nbsp; Blog archives | Stuff &amp; Nonsense, Wales, UK</a></p>
+<p><a href="https://getbem.com/">https://getbem.com/</a></p>
+<p><a href="https://specificity.keegan.st/">https://specificity.keegan.st/</a></p>
+<h2 class="atx" id="choosing-colours-1">Choosing colours</h2>
+<pre><code class="fenced-code-block">color: Rule of text use hex for static colors and rgba when you need transparency</code></pre>
+<h2 class="atx" id="fonts-1">Fonts</h2>
+<h3 class="atx" id="default-fonts-1">Default fonts</h3>
+<ul>
+<li>There are sanes serif and serif</li>
+<li>can use backup fonts</li>
+</ul>
+<p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.php">CSS Web Safe Fonts</a> <a href="https://systemfontstack.com/">https://systemfontstack.com/</a></p>
+<h3 class="atx" id="custom-fonts-1">Custom fonts</h3>
+<p>Uses</p>
+<p>font-face</p>
+<ul>
+<li>Start with these attributes to look good via body</li>
+</ul>
+<p>14px (min)
+line height 1.5</p>
+<h1 class="atx" id="more-csss">More CSSS</h1>
+<h2 class="atx" id="font-font-size-family">font: font-size family</h2>
+<p>e.g
+font: 26px, "Raleway", "Helvetica", sans-serif;</p>
+<p><a href="https://www.w3schools.com/css/css_font_shorthand.asp">CSS Font Shorthand Property</a></p>
+<h2 class="atx" id="image-backgrounds">image backgrounds</h2>
+<p>background-repeat: no-repeat;
+background-position: center;
+background: colour, repeat, position</p>
+<p><a href="https://www.w3schools.com/css/css_background_shorthand.asp">CSS Background Shorthand</a></p>
+<h2 class="atx" id="padding">padding</h2>
+<p>/* Apply to all four sides */
+padding: 1em;</p>
+<p>/* top and bottom | left and right */
+padding: 5% 10%;</p>
+<p>/* top | left and right | bottom */
+padding: 1em 2em 2em;</p>
+<p>/* top | right | bottom | left */
+padding: 5px 1em 0 2em;</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">padding - CSS: Cascading Style Sheets | MDN</a></p>
+<h2 class="atx" id="css-units">CSS Units</h2>
+<p>/* em rem */ <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">CSS values and units - Learn web development | MDN</a></p>
+<h2 class="atx" id="css-box-model-content-box">CSS Box model (content box)</h2>
+<p><a href="http://guyroutledge.github.io/box-model/">Box Model Demo</a></p>
+<p>the content-box model is technically outdated</p>
+<h2 class="atx" id="css-box-model-border-box">CSS Box model (border box)</h2>
+<p>padding/border remaains the same in border-box model</p>
+<p>By default it uses responsivenes</p>
+<h1 class="atx" id="applying-the-box-model">Applying the box model</h1>
+<p>.box {
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;</p>
+<pre><code class="fenced-code-block">width: 500px;
+height: 500px;
+margin: 20px;
+padding: 20px;
+border-width: 10px;
+
+/* border-style and border-color must
+   be set for border-width to apply */</code></pre>
+<p>}</p>
+<h1 class="atx" id="floats">floats</h1>
+<p>Only use it when you need content to around an image</p>
+<p>parent p &gt; img {
+ float: left;
+ margin: 10px 10px 10px 0;
+}
+Will make the text wrap around it on the left</p>
+<h1 class="atx" id="layouts">layouts</h1>
+<p>flexbox vs grid</p>
+<h1 class="atx" id="flexbox">flexbox</h1>
+<ul>
+<li>flexbox become flex items</li>
+<li>default direction is a row</li>
+<li>Adding more containers can make it overshoot regardless of browser and device</li>
+<li>Can use flex-wrap to make it all come into one row</li>
+<li>YOu can set width and heigh (unlike with inline objects)</li>
+<li>Size of the box is determined by the content</li>
+<li>This can be changed by adding a flex-basis: 1em; to give an equal size</li>
+<li>Can appply order by creating class</li>
+</ul>
+<h1 class="atx" id="can-i-use-it">can i use it?</h1>
+<p>Checks browser compatability <a href="https://caniuse.com/?search=grid">"grid" | Can I use... Support tables for HTML5, CSS3, etc</a></p>
+<h1 class="atx" id="javascript-andamp-design">Javascript &amp; Design</h1>
+<h2 class="atx" id="const-vs-let">Const vs Let</h2>
+<p>Const does not mean the data can't be changed. For example in the cae of an array, we can still change the elements within it. Howver, if we tried to use the same variable again it won't work. THis helps reduce bugs. Trying to change an array to a string is when let should be used since you are changing the data type</p>
+<h2 class="atx" id="responsive-design">Responsive design</h2>
+<ul>
+<li><p>Lett content above the fold on smaller screens</p>
+</li>
+<li><p>Avoid hidining content from the user when targeting mobile devices. I Ideally they'll be show later in the page</p>
+</li>
+<li><p>This of @ as an if statment,</p>
+</li>
+<li><p>Able to add more tabs to the saame element</p>
+</li>
+<li><p>Within @media print screen</p>
+</li>
+<li><p>Can choose landscape to design for phones</p>
+</li>
+<li><p>THe mdia querys are known as breakpoints</p>
+</li>
+<li><p>It's better to target a wise range of de ices instead</p>
+</li>
+</ul>
+<h3 class="atx" id="advice">Advice</h3>
+<ul>
+<li>Start by designing a snall screen</li>
+<li>Avoid fixed pixel values</li>
+</ul>
+<h1 class="atx" id="js">JS</h1>
+<ul>
+<li>Can have multiple vent listerners on one element</li>
+</ul>
+<h1 class="atx" id="manipulation-the-dom">Manipulation the dom</h1>
+<ul>
+<li>You need to select somethig to mainpulate the DOM</li>
+<li>When something gets changed the console elemenmts in spector will change</li>
+<li>If using an event listern avoid automatically calling the function.</li>
+<li>Can use the the data tag in html to do more stuff with js</li>
+<li>Avoid hard coded numbers</li>
+</ul>
+<h2 class="atx" id="things-you-can-change">Things you can change</h2>
+<ul>
+<li>CHange images on button click</li>
+<li>add eleemnts and items (such as a new list item)</li>
+</ul>
+<h2 class="atx" id="dom-tweakers">DOM Tweakers</h2>
+<ul>
+<li>Event bubbling is when an even propergates through the DOM structure</li>
+</ul>
+<h1 class="atx" id="event-propergration">Event propergration</h1>
+<pre><code class="fenced-code-block">pink.addEventListener('click', function (evt) {
+  // console.log(evt)
+  event.stopPropagation()
+  console.log("Pink Clicked")
+})</code></pre>
+<p>Often you want to to do something with a link, either itnercept it or whatever</p>
+<h2 class="atx" id="event-delegation">Event delegation</h2>
+<p>By putting event listeners in order you can access elements created on the fly</p>
+<h2 class="atx" id="preventing-default-behaviour">Preventing default behaviour</h2>
+<p>event.preventDefault()</p>
+<p>This means the elemment its attatched to won't fire up as normal (such an ancro link not sending it to a new windows)</p>
+<p>Javascript runs your file one by one, adding all the event listners that are needed. Its common to create new elements on the fly.</p>
+</article>
+</body>
+</html>
