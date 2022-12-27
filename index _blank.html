@@ -10,12 +10,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/9e4a8cb2c2.js" crossorigin="anonymous"></script>
-  <script src="jquery.js"></script> 
-  <script> 
-  $(function(){
-    $("#includedContent").load("b.html"); 
-  });
-  </script> 
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#includedContent").load("b.html");
+      $("#leftload").load("side-left.html");
+      $("#rightload").load("side-right.html");
+    });
+  </script>
 </head>
 
 <body>
@@ -57,36 +59,7 @@
   <div class="container-fluid text-center">
     <div class="row content">
       <aside id="left-bar">
-        <div class="col-sm-2 sidenav-left">
-          <h3>Resources</h3>
-          <p><a href="https://learnxinyminutes.com/">Learn X in Y</a></p>
-          <h4>Programming</h4>
-          <p></p>
-          <h4>Javascript</h4>
-          <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JS reference - MDN</a></p>
-          <p><a href="https://www.w3schools.com/jsref/default.asp">W3C JS Topics</a></p>
-          <p><a href="https://quickref.me/javascript">Cheatsheets <br> (JS & > 20 others)</a></p>
-          <p><a href="https://learnjavascript.online/app.html?id=1436">Learn JS Online</a></p>
-          <h4>Sandboxs & Code Sharing</h4>
-          <p><a href="https://playcode.io/my-projects">Playcode - avoid crashing your browser with this sandbox</a></p>
-          <p><a href="https://codepen.io/">Code pen - easily share and test code</a></p>
-          <p><a href="https://codesandbox.io/">Codesandbox (create a sandbox from a git repo!)</a></p>
-          <p><a ahref="https://try.ruby-lang.org/">Try Ruby</a></p>
-          <p><a ahref="https://try.ruby-lang.org/playground/">Try Ruby playground</a></p>
-          <h4>Design</h4>
-          <p><a ahref="https://coolors.co/">Colour pattle generator</a></p>
-          <p><a ahref="https://colorswall.com/collections?tab=views">Colorswall - popular colour pattles from brands to
-              flags</a></p>
-          <p><a ahref="https://pixabay.com/">Pixabay - free stock images</a></p>
-          <a ahref="https://www.canva.com/">Canva - make awesome graphics in minutes</a>
-          <p><a ahref="https://www.flaticon.com/">Flat Icon - Free icons</a></p>
-          <p><a ahref="https://fontawesome.com/">Font awesome - Easily add icons to websites & apps</a></p>
-          <h4>Frameworks</h4>
-          <p><a ahref="https://getbootstrap.com/">Repsonsive CSS Framework Bootstrap</a></p>
-          <h4>Libraries</h4>
-          <h4>Content</h4>
-          <p><a href="https://appsumo.com/products/marketplace-wordhero/">AI Content Writer</a></p>
-        </div>
+        <div id="leftload"></div>
       </aside>
       <div class="col-sm-8 text-center">
         <section id="welcome">
@@ -104,7 +77,10 @@
         </section> -->
         <section id="add-section">
           <h2>Inserting HTML into other pages</h2>
-          <p> A discuson at <a href="https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file">stack overflow</a> came up with the idea of using Jquery to add html documents into documents using the load function. The text below is imported from b.html</p>
+          <p> A discuson at <a
+              href="https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file">stack
+              overflow</a> came up with the idea of using Jquery to add html documents into documents using the load
+            function. The text below is imported from b.html</p>
           <div id="includedContent"></div>
         </section>
         <section id="output-text">
@@ -241,33 +217,15 @@
             data-libs="mavenlib1, mavenlib2">
             console.log('The J doogle plugin supports nodejs, ruby, python and a few other languages')
           </div>
-          <a ahref="https://docs.jdoodle.com/integrating-compiler-ide-to-your-application/languages-and-versions-supported-in-api-and-plugins">J Doodlge language options</a>
+          <a
+            ahref="https://docs.jdoodle.com/integrating-compiler-ide-to-your-application/languages-and-versions-supported-in-api-and-plugins">J
+            Doodlge language options</a>
           <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
         </section>
       </div>
 
       <aside id="right-bar">
-        <div class="col-sm-2 sidenav-right">
-          <h3>Quick References</h3>
-          <div class="well">
-            <h4>Playing around with JS <i class="fa-brands fa-js"></i></h4>
-            <p>Go to the <a href="proNotes.js">script.js</a> file to view/customise the Javascript of this page</p>
-          </div>
-          <div class="well">
-            <h4>Opening the DevTools console (chrome) <i class="fa-brands fa-chrome"></i></h4>
-            <p>
-              <kdb>Control</kdb>+Shift+J
-            </p>
-          </div>
-          <div class="well">
-            <h4>Open terminal on VScode <img src="images/vscode.svg" width="15.75px" height="18px"></h4>
-            <p>Control+Shift+`</p>
-          </div>
-          <div class="well">
-            <h4>Opening files browser from <i class="fa-brands fa-ubuntu"></i></h4>
-            <p><mark>nautilus .</mark></p>
-          </div>
-        </div>
+        <div id="rightload"></div>
       </aside>
     </div>
 

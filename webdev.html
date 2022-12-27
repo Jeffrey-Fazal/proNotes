@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>proNotes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="proNotes.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/9e4a8cb2c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="brand-link" href="#">proNotes</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Code Snipppets</a></li>
+          <li class="active"><a href="proNotes-notes.html">Web Dev</a></li>
+          <li><a href="shell/">Shell</a></li>
+          <li><a href="HTML/">HTML</a></li>
+          <li><a href="CSS/">CSS</a></li>
+          <li><a href="JS/">JS</a></li>
+          <li><a href="TS/">Type Script</a></li>
+          <li><a href="Ruby/">Ruby</a></li>
+          <li><a href="React/">React</a></li>
+          <li><a href="Projects/">Projects</a></li>
+          <li><a href="Projects/">Workshops</a></li>
+          <li><a href="#validation">Contact</a></li>
+        </ul>
+        <!-- login link & icon
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <aside id="left-bar">
+        <div class="col-sm-2 sidenav-left">
+          <h3>Resources</h3>
+          <p><a href="https://learnxinyminutes.com/">Learn X in Y</a></p>
+          <h4>Programming</h4>
+          <p></p>
+          <h4>Javascript</h4>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JS reference - MDN</a></p>
+          <p><a href="https://www.w3schools.com/jsref/default.asp">W3C JS Topics</a></p>
+          <p><a href="https://quickref.me/javascript">Cheatsheets <br> (JS & > 20 others)</a></p>
+          <p><a href="https://learnjavascript.online/app.html?id=1436">Learn JS Online</a></p>
+          <h4>Sandboxs & Code Sharing</h4>
+          <p><a href="https://playcode.io/my-projects">Playcode - avoid crashing your browser with this sandbox</a></p>
+          <p><a href="https://codepen.io/">Code pen - easily share and test code</a></p>
+          <p><a href="https://codesandbox.io/">Codesandbox (create a sandbox from a git repo!)</a></p>
+          <p><a ahref="https://try.ruby-lang.org/">Try Ruby</a></p>
+          <p><a ahref="https://try.ruby-lang.org/playground/">Try Ruby playground</a></p>
+          <h4>Design</h4>
+          <p><a ahref="https://coolors.co/">Colour pattle generator</a></p>
+          <p><a ahref="https://colorswall.com/collections?tab=views">Colorswall - popular colour pattles from brands to
+              flags</a></p>
+          <p><a ahref="https://pixabay.com/">Pixabay - free stock images</a></p>
+          <a ahref="https://www.canva.com/">Canva - make awesome graphics in minutes</a>
+          <p><a ahref="https://www.flaticon.com/">Flat Icon - Free icons</a></p>
+          <p><a ahref="https://fontawesome.com/">Font awesome - Easily add icons to websites & apps</a></p>
+          <h4>Frameworks</h4>
+          <p><a ahref="https://getbootstrap.com/">Repsonsive CSS Framework Bootstrap</a></p>
+          <h4>Libraries</h4>
+          <h4>Content</h4>
+          <p><a href="https://appsumo.com/products/marketplace-wordhero/">AI Content Writer</a></p>
+        </div>
+      </aside>
+      <div class="col-sm-8 text-center">
+        <section id="welcome">
+          <h1 id="h1-tag">Web Dev</h1>
+          <p id="intro">Notes from webdev</p>
+        <section>
+          <article class="markdown-body"><h1 class="atx" id="course-notes">Course Notes</h1>
+            <p>The course is split into two components, components which are classwork and homework.</p>
+            <h2 class="atx" id="principles">Principles</h2>
+            <ul>
+            <li>Dry</li>
+            <li>Code is made for other humans</li>
+            </ul>
+            <p>Required software for  <a href="https://gist.github.com/didoarellano/5cb8a0e899363e0264fcdfb1247a8d01">SEIC60 Unit 1 Installfest - Windows WSL2 · GitHub</a></p>
+            <h2 class="atx" id="open-folder-in-vs-code">open folder in vs code</h2>
+            <p>code .</p>
+            <h1 class="atx" id="note-taking-copy">Note taking copy</h1>
+            <p>copying and pasting from various files in coursework into the one thing here:</p>
+            <h1 class="atx" id="introduction-to-js">Introduction to JS</h1>
+            <p>HTML = Structure
+            CSS = Presentation of structure
+            JS = Behaviour</p>
+            <h1 class="atx" id="js-tools">JS Tools</h1>
+            <h2 class="atx" id="chrome-inspector">Chrome Inspector</h2>
+            <p>Can use the console to run JS</p>
+            <h2 class="atx" id="js-broswer-tools">JS broswer tools</h2>
+            <p>alert() // shows a popup with the value
+            console.log() // shows message in console
+            prompt('How are you today?') // similar to alert with a pop up box</p>
+            <h2 class="atx" id="vs-code">VS Code</h2>
+            <ul>
+            <li>Can create a boiler plate for HTML files with '! and TAB'</li>
+            <li>Can use lorem to generate place holder text</li>
+            <li>Use control k to comment put multiple lines of code</li>
+            </ul>
+            <h1 class="atx" id="javascript">Javascript</h1>
+            <h2 class="atx" id="data-types">Data Types</h2>
+            <ul>
+            <li>Text/Strings</li>
+            <li>Numbers e.g console.log(42 + 42)</li>
+            </ul>
+            <p>the typeof function can be used to determine the type of</p>
+            <h2 class="atx" id="primitive-basics">Primitive (basics)</h2>
+            <h3 class="atx" id="strings">strings</h3>
+            <ul>
+            <li>strings be used by enclosing text in ' " or <code>e.g **console.log('I am a string') console.log("I am a string") console.log(</code>I am a strong`)
+            **</li>
+            </ul>
+            <h3 class="atx" id="numbers">numbers</h3>
+            <p>special numbers
+            console.log(Infinity)
+            console.log(NaN)
+            console.log(100_000_000) // underscores can be used to make numbers humman readable</p>
+            <h3 class="atx" id="boolean">boolean</h3>
+            <p>Can only be true or false</p>
+            <p>console.log(true)
+            console.log(false)</p>
+            <h3 class="atx" id="undefined">undefined</h3>
+            <p>console.log(undefined)</p>
+            <h3 class="atx" id="nulll">nulll</h3>
+            <p>console.log(null) // convention is to use it as a place holder that will set another variables</p>
+            <p>// technically and object and can break the web if changed</p>
+            <h2 class="atx" id="container-more-complex">Container (more complex)</h2>
+            <h1 class="atx" id="variables">Variables</h1>
+            <p>3 types const, let and var
+            const firstName = 'Tonto'</p>
+            <p>Const is only used for constats otherwise it wont be able to be changed later on</p>
+            <p>let can be used for things that change</p>
+            <p>Generally use const for things</p>
+            <h2 class="atx" id="rules-for-js-variables">rules for js variables</h2>
+            <p>alphanumberic, dollor sign or underline</p>
+            <p>cant start a variable name with a number</p>
+            <p>cant use js resvered words such as let <a href="https://www.w3schools.com/js/js_reserved.asp">JavaScript Reserved Words</a></p>
+            <h2 class="atx" id="parts-of-a-variable">Parts of a variable</h2>
+            <ol>
+            <li>decelration e.g let blah</li>
+            <li>initialise value e.g. blah = 'example'</li>
+            </ol>
+            <h1 class="atx" id="dry-principle">DRY principle</h1>
+            <p>Don't repeat cour code</p>
+            <h1 class="atx" id="operators-eg--or-minus-are-binary-types-that-need-to-values">Operators (e.g. + or minus) are binary types that need to values</h1>
+            <p>e.g (21 * 23)</p>
+            <h2 class="atx" id="special-operators">Special operators</h2>
+            <p>% = checks for remainder and can be used for even/odd
+            0 is even</p>
+            <h1 class="atx" id="escape-characters">Escape characters</h1>
+            <p>can use \ to create white space and ensure that a ' within a string doesnt blow it up</p>
+            <h1 class="atx" id="and39-using-backticks-for-adding-variables-within-one-string-without-concatinating-and-anything-else-that-returns-a-value">' using backticks for adding variables within one string (without concatinating) and anything else that returns a value</h1>
+            <p><a href="https://en.wikipedia.org/wiki/String_interpolation">String interpolation - Wikipedia</a></p>
+            <p>const dogname = 'dabbs'
+            console.log(<code>Good boy ${dogname}</code>)</p>
+            <h2 class="atx" id="js-error-testing">JS error testing</h2>
+            <p>type error means its the wrong variable type</p>
+            <h3 class="atx" id="operational-issues">Operational issues</h3>
+            <p>console.log(40 + '2') // is 402
+            console.log (1 * 'one') // NaN</p>
+            <p>console.log(0.1 + 0.2) // since all numbers are a float in js it will technicaly be something a bit different</p>
+            <h2 class="atx" id="control-flow">Control flow</h2>
+            <p>Goes from top to bottom normally. There are ways to determine where it changes depending on conditions.</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if...else - JavaScript | MDN</a></p>
+            <h2 class="atx" id="flow-charts">Flow charts</h2>
+            <p>diamond = decision</p>
+            <p>Map it out by diagraming it</p>
+            <h3 class="atx" id="conditional-statments-and-looops">conditional statments and looops</h3>
+            <h3 class="atx" id="loose-equality">Loose equality</h3>
+            <p>console.log(age == '32) // result true</p>
+            <p>console.log(age === '21') // best to use strict equality</p>
+            <ul>
+            <li>Checks the values and data types // result false</li>
+            </ul>
+            <h2 class="atx" id="logical-operators">logical operators</h2>
+            <h3 class="atx" id="binary">binary</h3>
+            <p>&amp;&amp; AND</p>
+            <p>|| OR</p>
+            <h1 class="atx" id="univary">univary</h1>
+            <p>! / is not equal to</p>
+            <p>console.log(!(42 &gt; 40))</p>
+            <h2 class="atx" id="donand39t-use-mathematical-functions-for-precise-finacial-calculations">Don't use mathematical functions for precise finacial calculations</h2>
+            <p>can use a library instead.</p>
+            <p>Functions</p>
+            <h2 class="atx" id="creating-names">Creating names</h2>
+            <ul>
+            <li>Follows the same rules as variables (alphanumeric)</li>
+            </ul>
+            <h2 class="atx" id="creating-a-function">Creating a function</h2>
+            <pre><code class="fenced-code-block language-js"><span class="token keyword">const</span> <span class="token function-variable function">way2_calculateTax</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// a scope is created when the curly brackets are made</span>
+                <span class="token keyword">const</span> tax <span class="token operator">=</span> <span class="token number">40000</span> <span class="token operator">*</span> <span class="token number">0.12</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tax<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+            
+            <span class="token function">way2_calculateTax</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// calls function also known as execute or invoke</span></code></pre>
+            <h3 class="atx" id="parameters-and-arguments">Parameters and Arguments</h3>
+            <pre><code class="fenced-code-block">function demo = function (parametter) {}
+            demo(argument)</code></pre>
+            <h3 class="atx" id="functions-behaviour">Functions behaviour</h3>
+            <p>Hoisted functions</p>
+            <ul>
+            <li>happens during a regular function</li>
+            </ul>
+            <p>Will move the function to the start of the script (functionaly)
+            So you can call it anywhere in the program</p>
+            <p>Function statments can be overwitten by other functions (regular functions not const functions</p>
+            <p>Const are block scopes (no leackage of variables))</p>
+            <pre><code class="fenced-code-block language-js"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">function</span> <span class="token function">leaky</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'leaks out the block'</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">const</span> <span class="token keyword">function</span> <span class="token function-variable function">noLeaky</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>'no leakage<span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            
+            <span class="token function">leaky</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token function">noLeaky</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+            <h2 class="atx" id="loops-and-operators">Loops and operators</h2>
+            <p>[[[<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment%5D%5D%5D(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment%5D%5D)">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment]]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment%5D%5D)</a></p>
+            <pre><code class="fenced-code-block language-js"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">100</span>
+            num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
+            num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token number">1</span>
+            <span class="token comment">// ++ Is a increment operator</span>
+            num<span class="token operator">++</span> <span class="token comment">// A uni operator that only works on what operator, it is a posfix operator </span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
+            num<span class="token operator">++</span>
+            <span class="token comment">// -- Is a descrment opperator</span>
+            
+            <span class="token comment">// compound addition assignment (takes a variable and adds the number to it)</span>
+            num <span class="token operator">+=</span> <span class="token number">5</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment">// will = 105</span>
+            <span class="token comment">// similar thing for -</span></code></pre>
+            <h2 class="atx" id="for-loops">For loops</h2>
+            <pre><code class="fenced-code-block language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span>initialisation<span class="token punctuation">,</span> conditon<span class="token punctuation">,</span> increment<span class="token operator">/</span>decrement<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">do</span> stuff
+            <span class="token punctuation">}</span></code></pre>
+            <ul>
+            <li>Initalisation only happens once.</li>
+            <li>Conditional checks if the variable meats the condition till it is false</li>
+            <li>the incriment/decrement loops till the condition is false</li>
+            </ul>
+            <h3 class="atx" id="infinite-loops">Infinite loops</h3>
+            <p>If trying to meet a conditional that can't be evaluated, it may stuff it up</p>
+            <h2 class="atx" id="for-vs-while-loops">for vs while loops</h2>
+            <h3 class="atx" id="while-loops">while loops</h3>
+            <ul>
+            <li>Are more dangerous as its easier to enter an infinite loop</li>
+            <li>Can be useful if your not sure about what a value is or in games where your asking for input, generating stuff etc</li>
+            </ul>
+            <pre><code class="fenced-code-block language-javascript"><span class="token keyword">let</span> gameOver <span class="token operator">=</span> <span class="token boolean">false</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>gameOver<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">let</span> userInput <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'Quit (y/n)'</span><span class="token punctuation">)</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>useInput <span class="token operator">===</span> <span class="token string">'yes'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    gameOver <span class="token operator">=</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'keep doing game stuff'</span><span class="token punctuation">)</span>
+                <span class="token comment">// 1000 lines</span>
+            <span class="token punctuation">}</span></code></pre>
+            <pre><code class="fenced-code-block language-js"><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">let</span> quit <span class="token operator">=</span> <span class="token function">confirm</span><span class="token punctuation">(</span><span class="token string">' Do you want to quit'</span><span class="token punctuation">)</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>quit<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">break</span>
+                <span class="token punctuation">}</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Keep playing'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span></code></pre>
+            <pre><code class="fenced-code-block language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">20</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">3</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">continue</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span></code></pre>
+            <h1 class="atx" id="array-data-types-">Array data types []</h1>
+            <ul>
+            <li>A data type that contains more elments (aka as lists in other languages)</li>
+            <li>arrays are initalised with [] and elements are seperated by commas ,</li>
+            <li>arrays are ordered lists, starting with 0 (js is a 0 based index)</li>
+            <li>you can determine the amount of elements by using the property .lenght</li>
+            <li>If you use let with an array it can be overidden</li>
+            <li>JS doesn't care about types and can contain strings and numbers (opposed to other languages that need you to define if it will have numbers etc)</li>
+            </ul>
+            <h2 class="atx" id="let-vs-const">let vs const</h2>
+            <pre><code class="fenced-code-block">let satchel = [
+                'gold'
+                'coins',
+            ]
+            console.log(satchel) // gold and coins
+            let satchel = [
+                bag, 
+            ]
+            console.log(satchel) // you've lost your bag</code></pre>
+            <h2 class="atx" id="indexes">indexes</h2>
+            <p>satchel[3] = null
+            console.log(satchel)</p>
+            <p>const index = 2
+            (console.log[2])
+            console.log[index]</p>
+            <h2 class="atx" id="looping-an-array-for-loop-if-access-to-index-and39s-are-neded">looping an array (for loop if access to index #'s are neded)</h2>
+            <pre><code class="fenced-code-block">for (let i = 0; i &lt; satchel.length; i++&gt;) { // never assume the length of an array
+                console.log(i)
+                console.log(satchel[i])</code></pre>
+            <p>You can not assume that start of an array</p>
+            <ul>
+            <li><p>To get the last item in an array</p>
+            <pre><code class="fenced-code-block">console.log(satchel[satchel.lenght - 1])</code></pre>
+            </li>
+            </ul>
+            <h2 class="atx" id="the-for--of-loop-prefered-if-you-only-need-access-to-the-elements">the for .. of loop (prefered if you only need access to the elements)</h2>
+            <pre><code class="fenced-code-block">for (let element of satchel) {
+                console.log(element)
+            }</code></pre>
+            <h3 class="atx" id="checking-for-arrays">checking for arrays</h3>
+            <ul>
+            <li>can't use typeof because it'll return it as an object instead of an array</li>
+            </ul>
+            <h1 class="atx" id="nested-arrays">Nested arrays</h1>
+            <p>An array within an array</p>
+            <pre><code class="fenced-code-block">const pairs = [
+                ['Harold', 'Kumar'],
+                ['Ren', 'Stimpy']
+            ]
+            console.log(pairs[1][1])</code></pre>
+            <ul>
+            <li>Can set array elements with same syntax</li>
+            </ul>
+            <h2 class="atx" id="looping-nested-array">looping nested array</h2>
+            <pre><code class="fenced-code-block">for (let pair of pairs_ {
+                for (let character of pair) {
+                    console.log(character)
+                }
+            }</code></pre>
+            <ul>
+            <li><p>A common thing in tests is nested arrays within nested arrays</p>
+            <pre><code class="fenced-code-block">for (let pair of pairs) {
+              for (let characer of pair) {
+                  console.log{character}
+              }
+            }</code></pre>
+            </li>
+            </ul>
+            <h1 class="atx" id="js-objects">JS Objects</h1>
+            <ul>
+            <li>objects give meta info</li>
+            <li>Using curly brackets create objects (when allocated to a variable it is not a code block</li>
+            <li>Can be any data type or object</li>
+            <li>Has a kay: value pair</li>
+            </ul>
+            <pre><code class="fenced-code-block">let wolfy = {
+                name: 'wolfy',
+                species: 'wolf',
+                age: 16 // can be any type of data
+            }</code></pre>
+            <h2 class="atx" id="accessing-nested-data">Accessing nested data</h2>
+            <ul>
+            <li><p>will need a mix of bracket and . access</p>
+            <pre><code class="fenced-code-block">console.log(car.colours[0])
+            console.log(car.engine.hp)
+            console.log(car.engine.sounds[2])</code></pre>
+            </li>
+            </ul>
+            <h2 class="atx" id="looping-over-objects">looping over objects</h2>
+            <ul>
+            <li>can use for in (instead of for of for arrays) to loops objects</li>
+            <li>use the type of data to access the right infomation</li>
+            </ul>
+            <pre><code class="fenced-code-block">for (let propertyName in car) {
+                console.log(PropertyName)
+                console.log(car[propertyName])
+                console.log(car.propertyName) // this wont show the proper thing, because its looking for something called property name within car. use bracket access and target the thing properly
+            }</code></pre>
+            <ul>
+            <li><p>Can use key to get the property values or specfic values of the property</p>
+            <pre><code class="fenced-code-block">console.log(key)
+            console.log(car[key]])</code></pre>
+            </li>
+            </ul>
+            <h2 class="atx" id="test-if-an-earry-is-an-arry">test if an earry is an arry</h2>
+            <p>typeof</p>
+            <h1 class="atx" id="strings-arrays-andamp-higher-order-functions">Strings, Arrays &amp; Higher order functions</h1>
+            <h2 class="atx" id="string-methods-js">String Methods (JS)</h2>
+            <pre><code class="fenced-code-block">console.log = ' tonto   '
+            console.log(name.length)
+            console.log(name.trim().length)</code></pre>
+            <ul>
+            <li>Need to use trim to remove backspaces otherwise it will count the white spaces</li>
+            <li>Reading docs is important e.g 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim%5D">[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim]</a>(MDN Docs)</li>
+            <li>Should know if something returns or modifies a value</li>
+            <li>Syntax shows the other forms (in mdn docs) and arguments</li>
+            <li>browsers tend to treat js more or less the same, as opposed to css which is a bit tricker</li>
+            <li>keep in mind what it returns</li>
+            </ul>
+            <pre><code class="fenced-code-block">console dog = 'Tonto is a good boy!'
+            console.log(dog.endsWith('!', 5))</code></pre>
+            <h2 class="atx" id="useful-methods">Useful methods</h2>
+            <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes">String.prototype.includes() - JavaScript | MDN</a></li>
+            <li>replace()</li>
+            <li>split(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">String.prototype.split() - JavaScript | MDN</a>)</li>
+            <li>String methods tend to be easier then array methods
+            *.at()</li>
+            </ul>
+            <pre><code class="fenced-code-block">const geneString = 'rock rap pop punk country'
+            
+            const gene = geneString.split
+            console.log(geneString.split(' '))
+            console.log(gene)</code></pre>
+            <h2 class="atx" id="other-methods">Other methods</h2>
+            <ul>
+            <li>slice can be used to copy and paste</li>
+            </ul>
+            <h2 class="atx" id="methods-to-use-with-caution">Methods to use with caution</h2>
+            <ul>
+            <li>shift</li>
+            <li>unshift</li>
+            </ul>
+            <h1 class="atx" id="method-defintion">Method defintion</h1>
+            <ul>
+            <li><p>Methods are functions that are defined to objects</p>
+            <pre><code class="fenced-code-block">const obj = {
+              name: x,
+              bar: function() // how methods at
+              x: split()
+            }</code></pre>
+            </li>
+            </ul>
+            <h1 class="atx" id="array-methods">Array methods</h1>
+            <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array - JavaScript | MDN</a></li>
+            </ul>
+            <h2 class="atx" id="mutate-array-will-be-changed-directly">mutate (array will be changed directly)</h2>
+            <h3 class="atx" id="adding-to-an-array">Adding to an array</h3>
+            <p>Can make a variable and then add it or use push</p>
+            <p>Use pop to remove last elements</p>
+            <h2 class="atx" id="immutable-wont-change-the-array">immutable (wont change the array)</h2>
+            <p>x</p>
+            <h1 class="atx" id="higher-order-functions-andamp-call-back">Higher order functions &amp; call back</h1>
+            <ul>
+            <li>calll a function within a function</li>
+            </ul>
+            <pre><code class="fenced-code-block">const fn1 = function () {
+                console.log('hi from fn1')
+            }
+            
+            const fn2 = function (param) {
+                console.log(typeof param)
+            }
+            fn2(fn1) // has the reference to the function itself</code></pre>
+            <pre><code class="fenced-code-block">const fn1 = function () {
+                console.log('hi from fn1')
+            }
+            
+            const fn2 = function (param) {
+                param() // a call back function
+            }</code></pre>
+            <ul>
+            <li>Important to understand that a lot of third party libraries expect a function</li>
+            <li>Example of this is having a button that is assigned a function to run the function</li>
+            </ul>
+            <pre><code class="fenced-code-block">fn2(function) () {
+                console.log('Hello from annonymous function')
+            }</code></pre>
+            <ul>
+            <li>Annonymus function: Generally used as a oneoff function</li>
+            </ul>
+            <h2 class="atx" id="use-case-for-map-function-more-array-stuff">Use case for map function (more array stuff)</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">Array.prototype.map() - JavaScript | MDN</a></p>
+            <p>e.g one method using for of</p>
+            <pre><code class="fenced-code-block">const fruits = ['apple', 'banana','mango,'avo'] {
+                let cappped = []
+                for (let fruit of fruitsArray) {
+            
+                })
+            }
+            
+            arrray.forEach</code></pre>
+            <h3 class="atx" id="new-loop-for-each--array-method">new loop (for each) + array method</h3>
+            <pre><code class="fenced-code-block">const fruits = ['apple', 'banana','mango,'avo']</code></pre>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">Array.prototype.forEach() - JavaScript | MDN</a></p>
+            <h3 class="atx" id="map">map</h3>
+            <p>babab.map</p>
+            <h2 class="atx" id="declerative-vs-procedural-vs-impertive-setup-by-steup">Declerative vs Procedural vs Impertive (setup by steup)</h2>
+            <p>Decelerative: Tells Javascript what to do</p>
+            <p>let upperCasedFruits = fruits.map(upperCaseFruits)</p>
+            <p>// creates the array</p>
+            <h3 class="atx" id="filter-method">filter method</h3>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">Array.prototype.filter() - JavaScript | MDN</a></p>
+            <p>Uses truthy and faly to determine if it should show (from return)</p>
+            <p>return</p>
+            <h2 class="atx" id="real-work-example">real work example</h2>
+            <pre><code class="fenced-code-block">const cities = [
+              { name: 'Sydney', population: 5000000, landMarks: 10000 },
+              { name: 'Melbourne', population: 4800000, landMarks: 9000 },
+              { name: 'Adelaide', population: 1300000, landMarks: 2000 },
+              { name: 'Manila', population: 1800000, landMarks: 2500 },
+            ]</code></pre>
+            <ul>
+            <li><p>can use map to grab a bunch of city names without creating a looop</p>
+            <pre><code class="fenced-code-block">const cityName = cities.map (function (city)) {
+              return. city.name
+            }
+            const mCities = cities.filter (function () {
+              return city.name.startsWith('m')
+            }</code></pre>
+            </li>
+            </ul>
+            <p>Using map function or map function can be combined with string methods to find sotuff</p>
+            <h1 class="atx" id="html">HTML</h1>
+            <ul>
+            <li><p>Giv# HTML</p>
+            <ul>
+            <li><p>Gives meaning semantic to structure</p>
+            </li>
+            <li><p>Composed of elements denoted by tags</p>
+            </li>
+            <li><p>Some elments will look the same as any other tag if no attributes are given</p>
+            <pre><code class="fenced-code-block">&lt;a&gt;
+            a
+            &lt;/a&gt;</code></pre>
+            </li>
+            <li><p>No attributes will show an aper tag as just text</p>
+            </li>
+            <li><p>Atrributes are space seperated</p>
+            </li>
+            </ul>
+            </li>
+            </ul>
+            <pre><code class="fenced-code-block">Paragraphs</code></pre>
+            <h2 class="atx" id="structure">Structure</h2>
+            <ul>
+            <li><p>IS defined by nesting tags</p>
+            <pre><code class="fenced-code-block">&lt;em&gt; - ephasis tags &lt;/strong&gt; - Bold
+            &lt;strong&gt;Text HEere&lt;/srong&gt; - Italics</code></pre>
+            </li>
+            </ul>
+            <h2 class="atx" id="html-element">HTML element</h2>
+            <pre><code class="fenced-code-block">* &lt;html lang="en"&gt;
+            * &lt;meta charset="UTF"&gt;</code></pre>
+            <ul>
+            <li><p>can only have head and body tag within in it</p>
+            </li>
+            <li><p>head is for meta data that you dont want to render</p>
+            </li>
+            <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML: HyperText Markup Language | MDN</a></p>
+            <h1 class="atx" id="types-of-tags">Types of tags</h1>
+            </li>
+            <li><p>Empty tags : Tags that are self closing e.g.<br>(technically the final tag is not needed but this syntax is better since its needed for react)</p>
+            </li>
+            <li><p>Content tags: Will have things within them</p>
+            <h1 class="atx" id="image-tag">Image tag</h1>
+            </li>
+            <li><p>Alt attributes can be used by screen readers to hear the content.</p>
+            </li>
+            <li><p>okace holder images (can use place img)</p>
+            </li>
+            <li><p><a href="https://placeimg.com/">https://placeimg.com/</a></p>
+            </li>
+            <li><p><a href="https://placeholder.com/">https://placeholder.com/</a></p>
+            <h1 class="atx" id="inline-vs-block-level-elements">Inline vs Block level elements</h1>
+            </li>
+            <li><p>In inspector: block level has margin (orange)</p>
+            </li>
+            <li><p>In insectpr: blue</p>
+            </li>
+            <li><p>Block level elements can contain other block level elements</p>
+            </li>
+            <li><p>Validator will check if nesting is valid or not</p>
+            <p>tags</p>
+            <h2 class="atx" id="keyboard-shortcuts">Keyboard shortcuts</h2>
+            <p>ul &gt; li &gt;*5</p>
+            <p>ul&gt;li*3&gt;p</p>
+            <p>ul*5</p>
+            <p><a href="https://code.visualstudio.com/docs/editor/emmet">Emmet in Visual Studio Code</a></p>
+            <h2 class="atx" id="semantic-tags">Semantic Tags</h2>
+            <p>Important for screen readers, regular browsers and makes it easily to read</p>
+            <p>Choosing a semantic tag: <a href="https://camo.githubusercontent.com/27fb2038ebff5efe9f9e5c0f87c05dd80e25cf782f065d15574688dbe965fa60/68747470733a2f2f692e696d6775722e636f6d2f615937574e386b2e706e67">https://camo.githubusercontent.com/27fb2038ebff5efe9f9e5c0f87c05dd80e25cf782f065d15574688dbe965fa60/68747470733a2f2f692e696d6775722e636f6d2f615937574e386b2e706e67</a></p>
+            <h1 class="atx" id="syntax-cases">Syntax cases</h1>
+            <h2 class="atx" id="css-selectors">CSS Selectors</h2>
+            <p>Choose a selector &gt; th styles that u want to style
+            sheet</p>
+            <h2 class="atx" id="adding-a-style">Adding a style</h2>
+            <h1 class="atx" id="css-selectors-1">CSS Selectors</h1>
+            <p><a href="https://www.w3schools.com/cssref/css_selectors.php">CSS Selectors Reference</a></p>
+            <p><a href="https://flukeout.github.io/">https://flukeout.github.io/</a></p>
+            <h2 class="atx" id="specificity">Specificity</h2>
+            <p>veg. a {
+            color:green
+            }</p>
+            <p>ul &gt; li &gt; a {
+            color: black;
+            }</p>
+            <h2 class="atx" id="the-point-system">The point system</h2>
+            <p><a href="https://stuffandnonsense.co.uk/archives/images/css-specificity-wars.png">https://stuffandnonsense.co.uk/archives/images/css-specificity-wars.png</a></p>
+            <p><a href="https://stuffandnonsense.co.uk/archives/css_specificity_wars.html">CSS Specificity Wars |&nbsp; Blog archives | Stuff &amp; Nonsense, Wales, UK</a></p>
+            <p><a href="https://getbem.com/">https://getbem.com/</a></p>
+            <p><a href="https://specificity.keegan.st/">https://specificity.keegan.st/</a></p>
+            <h2 class="atx" id="choosing-colours">Choosing colours</h2>
+            <pre><code class="fenced-code-block">color: Rule of text use hex for static colors and rgba when you need transparency</code></pre>
+            <h2 class="atx">Fonts</h2>
+            <h3 class="atx" id="default-fonts">Default fonts</h3>
+            </li>
+            <li><p>There are sanes serif and serif</p>
+            </li>
+            <li><p>can use backup fonts</p>
+            <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.php">CSS Web Safe Fonts</a> <a href="https://systemfontstack.com/">https://systemfontstack.com/</a></p>
+            <h3 class="atx" id="custom-fonts">Custom fonts</h3>
+            <p>Uses</p>
+            <p>font-face</p>
+            </li>
+            <li><p>Start with these attributes to look good via body</p>
+            <p>14px (min)
+            line height 1.5es meaning semantic to structure</p>
+            </li>
+            <li><p>Composed of elements denoted by tags</p>
+            </li>
+            <li><p>Some elments will look the same as any other tag if no attributes are given</p>
+            <pre><code class="fenced-code-block">&lt;a&gt;
+            a
+            &lt;/a&gt;</code></pre>
+            </li>
+            <li><p>No attributes will show an aper tag as just text</p>
+            </li>
+            <li><p>Atrributes are space seperated</p>
+            </li>
+            </ul>
+            <pre><code class="fenced-code-block">Paragraphs</code></pre>
+            <h2 class="atx" id="structure-1">Structure</h2>
+            <ul>
+            <li><p>IS defined by nesting tags</p>
+            <pre><code class="fenced-code-block">&lt;em&gt; - ephasis tags &lt;/strong&gt; - Bold
+            &lt;strong&gt;Text HEere&lt;/srong&gt; - Italics</code></pre>
+            </li>
+            </ul>
+            <h2 class="atx" id="html-element-1">HTML element</h2>
+            <pre><code class="fenced-code-block">* &lt;html lang="en"&gt;
+            * &lt;meta charset="UTF"&gt;</code></pre>
+            <ul>
+            <li>can only have head and body tag within in it</li>
+            <li>head is for meta data that you dont want to render</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML: HyperText Markup Language | MDN</a></li>
+            </ul>
+            <h1 class="atx" id="types-of-tags-1">Types of tags</h1>
+            <ul>
+            <li>Empty tags : Tags that are self closing e.g.<br>(technically the final tag is not needed but this syntax is better since its needed for react)</li>
+            <li>Content tags: Will have things within them</li>
+            </ul>
+            <h1 class="atx" id="image-tag-1">Image tag</h1>
+            <ul>
+            <li>Alt attributes can be used by screen readers to hear the content.</li>
+            <li>okace holder images (can use place img)</li>
+            <li><a href="https://placeimg.com/">https://placeimg.com/</a></li>
+            <li><a href="https://placeholder.com/">https://placeholder.com/</a></li>
+            </ul>
+            <h1 class="atx" id="inline-vs-block-level-elements-1">Inline vs Block level elements</h1>
+            <ul>
+            <li>In inspector: block level has margin (orange)</li>
+            <li>In insectpr: blue</li>
+            <li>Block level elements can contain other block level elements</li>
+            <li>Validator will check if nesting is valid or not</li>
+            </ul>
+            <p>tags</p>
+            <h2 class="atx" id="keyboard-shortcuts-1">Keyboard shortcuts</h2>
+            <p>ul &gt; li &gt;*5</p>
+            <p>ul&gt;li*3&gt;p</p>
+            <p>ul*5</p>
+            <p><a href="https://code.visualstudio.com/docs/editor/emmet">Emmet in Visual Studio Code</a></p>
+            <h2 class="atx" id="semantic-tags-1">Semantic Tags</h2>
+            <p>Important for screen readers, regular browsers and makes it easily to read</p>
+            <p>Choosing a semantic tag: <a href="https://camo.githubusercontent.com/27fb2038ebff5efe9f9e5c0f87c05dd80e25cf782f065d15574688dbe965fa60/68747470733a2f2f692e696d6775722e636f6d2f615937574e386b2e706e67">https://camo.githubusercontent.com/27fb2038ebff5efe9f9e5c0f87c05dd80e25cf782f065d15574688dbe965fa60/68747470733a2f2f692e696d6775722e636f6d2f615937574e386b2e706e67</a></p>
+            <h1 class="atx" id="syntax-cases-1">Syntax cases</h1>
+            <h2 class="atx" id="css-selectors-2">CSS Selectors</h2>
+            <p>Choose a selector &gt; th styles that u want to style
+            sheet</p>
+            <h2 class="atx" id="adding-a-style-1">Adding a style</h2>
+            <h1 class="atx" id="css-selectors-3">CSS Selectors</h1>
+            <p><a href="https://www.w3schools.com/cssref/css_selectors.php">CSS Selectors Reference</a></p>
+            <p><a href="https://flukeout.github.io/">https://flukeout.github.io/</a></p>
+            <h2 class="atx" id="specificity-1">Specificity</h2>
+            <p>veg. a {
+             color:green
+            }</p>
+            <p>ul &gt; li &gt; a {
+             color: black;
+            }</p>
+            <h2 class="atx" id="the-point-system-1">The point system</h2>
+            <p><a href="https://stuffandnonsense.co.uk/archives/images/css-specificity-wars.png">https://stuffandnonsense.co.uk/archives/images/css-specificity-wars.png</a></p>
+            <p><a href="https://stuffandnonsense.co.uk/archives/css_specificity_wars.html">CSS Specificity Wars |&nbsp; Blog archives | Stuff &amp; Nonsense, Wales, UK</a></p>
+            <p><a href="https://getbem.com/">https://getbem.com/</a></p>
+            <p><a href="https://specificity.keegan.st/">https://specificity.keegan.st/</a></p>
+            <h2 class="atx" id="choosing-colours-1">Choosing colours</h2>
+            <pre><code class="fenced-code-block">color: Rule of text use hex for static colors and rgba when you need transparency</code></pre>
+            <h2 class="atx" id="fonts-1">Fonts</h2>
+            <h3 class="atx" id="default-fonts-1">Default fonts</h3>
+            <ul>
+            <li>There are sanes serif and serif</li>
+            <li>can use backup fonts</li>
+            </ul>
+            <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.php">CSS Web Safe Fonts</a> <a href="https://systemfontstack.com/">https://systemfontstack.com/</a></p>
+            <h3 class="atx" id="custom-fonts-1">Custom fonts</h3>
+            <p>Uses</p>
+            <p>font-face</p>
+            <ul>
+            <li>Start with these attributes to look good via body</li>
+            </ul>
+            <p>14px (min)
+            line height 1.5</p>
+            <h1 class="atx" id="more-csss">More CSSS</h1>
+            <h2 class="atx" id="font-font-size-family">font: font-size family</h2>
+            <p>e.g
+            font: 26px, "Raleway", "Helvetica", sans-serif;</p>
+            <p><a href="https://www.w3schools.com/css/css_font_shorthand.asp">CSS Font Shorthand Property</a></p>
+            <h2 class="atx" id="image-backgrounds">image backgrounds</h2>
+            <p>background-repeat: no-repeat;
+            background-position: center;
+            background: colour, repeat, position</p>
+            <p><a href="https://www.w3schools.com/css/css_background_shorthand.asp">CSS Background Shorthand</a></p>
+            <h2 class="atx" id="padding">padding</h2>
+            <p>/* Apply to all four sides */
+            padding: 1em;</p>
+            <p>/* top and bottom | left and right */
+            padding: 5% 10%;</p>
+            <p>/* top | left and right | bottom */
+            padding: 1em 2em 2em;</p>
+            <p>/* top | right | bottom | left */
+            padding: 5px 1em 0 2em;</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">padding - CSS: Cascading Style Sheets | MDN</a></p>
+            <h2 class="atx" id="css-units">CSS Units</h2>
+            <p>/* em rem */ <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">CSS values and units - Learn web development | MDN</a></p>
+            <h2 class="atx" id="css-box-model-content-box">CSS Box model (content box)</h2>
+            <p><a href="http://guyroutledge.github.io/box-model/">Box Model Demo</a></p>
+            <p>the content-box model is technically outdated</p>
+            <h2 class="atx" id="css-box-model-border-box">CSS Box model (border box)</h2>
+            <p>padding/border remaains the same in border-box model</p>
+            <p>By default it uses responsivenes</p>
+            <h1 class="atx" id="applying-the-box-model">Applying the box model</h1>
+            <p>.box {
+             -moz-box-sizing: border-box;
+             box-sizing: border-box;</p>
+            <pre><code class="fenced-code-block">width: 500px;
+            height: 500px;
+            margin: 20px;
+            padding: 20px;
+            border-width: 10px;
+            
+            /* border-style and border-color must
+               be set for border-width to apply */</code></pre>
+            <p>}</p>
+            <h1 class="atx" id="floats">floats</h1>
+            <p>Only use it when you need content to around an image</p>
+            <p>parent p &gt; img {
+             float: left;
+             margin: 10px 10px 10px 0;
+            }
+            Will make the text wrap around it on the left</p>
+            <h1 class="atx" id="layouts">layouts</h1>
+            <p>flexbox vs grid</p>
+            <h1 class="atx" id="flexbox">flexbox</h1>
+            <ul>
+            <li>flexbox become flex items</li>
+            <li>default direction is a row</li>
+            <li>Adding more containers can make it overshoot regardless of browser and device</li>
+            <li>Can use flex-wrap to make it all come into one row</li>
+            <li>YOu can set width and heigh (unlike with inline objects)</li>
+            <li>Size of the box is determined by the content</li>
+            <li>This can be changed by adding a flex-basis: 1em; to give an equal size</li>
+            <li>Can appply order by creating class</li>
+            </ul>
+            <h1 class="atx" id="can-i-use-it">can i use it?</h1>
+            <p>Checks browser compatability <a href="https://caniuse.com/?search=grid">"grid" | Can I use... Support tables for HTML5, CSS3, etc</a></p>
+            <h1 class="atx" id="javascript-andamp-design">Javascript &amp; Design</h1>
+            <h2 class="atx" id="const-vs-let">Const vs Let</h2>
+            <p>Const does not mean the data can't be changed. For example in the cae of an array, we can still change the elements within it. Howver, if we tried to use the same variable again it won't work. THis helps reduce bugs. Trying to change an array to a string is when let should be used since you are changing the data type</p>
+            <h2 class="atx" id="responsive-design">Responsive design</h2>
+            <ul>
+            <li><p>Lett content above the fold on smaller screens</p>
+            </li>
+            <li><p>Avoid hidining content from the user when targeting mobile devices. I Ideally they'll be show later in the page</p>
+            </li>
+            <li><p>This of @ as an if statment,</p>
+            </li>
+            <li><p>Able to add more tabs to the saame element</p>
+            </li>
+            <li><p>Within @media print screen</p>
+            </li>
+            <li><p>Can choose landscape to design for phones</p>
+            </li>
+            <li><p>THe mdia querys are known as breakpoints</p>
+            </li>
+            <li><p>It's better to target a wise range of de ices instead</p>
+            </li>
+            </ul>
+            <h3 class="atx" id="advice">Advice</h3>
+            <ul>
+            <li>Start by designing a snall screen</li>
+            <li>Avoid fixed pixel values</li>
+            </ul>
+            <h1 class="atx" id="js">JS</h1>
+            <ul>
+            <li>Can have multiple vent listerners on one element</li>
+            </ul>
+            <h1 class="atx" id="manipulation-the-dom">Manipulation the dom</h1>
+            <ul>
+            <li>You need to select somethig to mainpulate the DOM</li>
+            <li>When something gets changed the console elemenmts in spector will change</li>
+            <li>If using an event listern avoid automatically calling the function.</li>
+            <li>Can use the the data tag in html to do more stuff with js</li>
+            <li>Avoid hard coded numbers</li>
+            </ul>
+            <h2 class="atx" id="things-you-can-change">Things you can change</h2>
+            <ul>
+            <li>CHange images on button click</li>
+            <li>add eleemnts and items (such as a new list item)</li>
+            </ul>
+            <h2 class="atx" id="dom-tweakers">DOM Tweakers</h2>
+            <ul>
+            <li>Event bubbling is when an even propergates through the DOM structure</li>
+            </ul>
+            <h1 class="atx" id="event-propergration">Event propergration</h1>
+            <pre><code class="fenced-code-block">pink.addEventListener('click', function (evt) {
+              // console.log(evt)
+              event.stopPropagation()
+              console.log("Pink Clicked")
+            })</code></pre>
+            <p>Often you want to to do something with a link, either itnercept it or whatever</p>
+            <h2 class="atx" id="event-delegation">Event delegation</h2>
+            <p>By putting event listeners in order you can access elements created on the fly</p>
+            <h2 class="atx" id="preventing-default-behaviour">Preventing default behaviour</h2>
+            <p>event.preventDefault()</p>
+            <p>This means the elemment its attatched to won't fire up as normal (such an ancro link not sending it to a new windows)</p>
+            <p>Javascript runs your file one by one, adding all the event listners that are needed. Its common to create new elements on the fly.</p>
+            </article>
+        </section>
+        </section>
+        <section id="online-ide">
+          <h2>J Doodle</h2>
+          <p>A place to easily try out code, right here on this page</p>
+          <div data-pym-src='https://www.jdoodle.com/plugin' data-language="nodejs" data-version-index="4"
+            data-libs="mavenlib1, mavenlib2">
+            console.log('This is nodejs')
+          </div>
+          <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+          <a ahref="https://docs.jdoodle.com/integrating-compiler-ide-to-your-application/languages-and-versions-supported-in-api-and-plugins">J Doodle language options</a>
+        </section>
+      </div>
+
+      <aside id="right-bar">
+        <div class="col-sm-2 sidenav-right">
+          <h3>Quick References</h3>
+          <div class="well">
+            <h4>Playing around with JS <i class="fa-brands fa-js"></i></h4>
+            <p>Go to the <a href="proNotes.js">script.js</a> file to view/customise the Javascript of this page</p>
+          </div>
+          <div class="well">
+            <h4>Opening the DevTools console (chrome) <i class="fa-brands fa-chrome"></i></h4>
+            <p>
+              <kdb>Control</kdb>+Shift+J
+            </p>
+          </div>
+          <div class="well">
+            <h4>Open terminal on VScode <img src="images/vscode.svg" width="15.75px" height="18px"></h4>
+            <p>Control+Shift+`</p>
+          </div>
+          <div class="well">
+            <h4>Opening files browser from <i class="fa-brands fa-ubuntu"></i></h4>
+            <p><mark>nautilus .</mark></p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>A template for beginer programs v 1 by <a href="https://github.com/Jeffrey-Fazal">Jeffrey-Fazal </a><svg
+        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+      </svg></p>
+    <div id="validation">
+      <h6>Validate your code:</h6>
+      <a href="https://validator.w3.org/nu/" target="_blank"><i class="fa-brands fa-html5"></i></a>
+      <a href="https://jigsaw.w3.org/css-validator/validator.html.en" target="_blank"><i
+          class="fa-brands fa-css3-alt"></i></a>
+      <a href="https://codebeautify.org/jsvalidate" target="_blank"><i class="fa-brands fa-square-js"></i></a>
+    </div>
+  </footer>
+  <script src="proNotes.js"></script>
+</body>
+
+</html>
+
+<!-- Semantic: section, header, footer, nav, main, article and aside-->
