@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>proNotes</title>
+  <title>Web Dev | proNotes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -14,72 +14,13 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" id="brand-link" href="#">proNotes</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Code Snipppets</a></li>
-          <li class="active"><a href="proNotes-notes.html">Web Dev</a></li>
-          <li><a href="shell/">Shell</a></li>
-          <li><a href="HTML/">HTML</a></li>
-          <li><a href="CSS/">CSS</a></li>
-          <li><a href="JS/">JS</a></li>
-          <li><a href="TS/">Type Script</a></li>
-          <li><a href="Ruby/">Ruby</a></li>
-          <li><a href="React/">React</a></li>
-          <li><a href="Projects/">Projects</a></li>
-          <li><a href="Projects/">Workshops</a></li>
-          <li><a href="#validation">Contact</a></li>
-        </ul>
-        <!-- login link & icon
-          <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-        </ul> -->
-      </div>
-    </div>
-  </nav>
+  <div id="js-nav"></div>
 
   <div class="container-fluid text-center">
     <div class="row content">
       <aside id="left-bar">
         <div class="col-sm-2 sidenav-left">
-          <h3>Resources</h3>
-          <p><a href="https://learnxinyminutes.com/">Learn X in Y</a></p>
-          <h4>Programming</h4>
-          <p></p>
-          <h4>Javascript</h4>
-          <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JS reference - MDN</a></p>
-          <p><a href="https://www.w3schools.com/jsref/default.asp">W3C JS Topics</a></p>
-          <p><a href="https://quickref.me/javascript">Cheatsheets <br> (JS & > 20 others)</a></p>
-          <p><a href="https://learnjavascript.online/app.html?id=1436">Learn JS Online</a></p>
-          <h4>Sandboxs & Code Sharing</h4>
-          <p><a href="https://playcode.io/my-projects">Playcode - avoid crashing your browser with this sandbox</a></p>
-          <p><a href="https://codepen.io/">Code pen - easily share and test code</a></p>
-          <p><a href="https://codesandbox.io/">Codesandbox (create a sandbox from a git repo!)</a></p>
-          <p><a ahref="https://try.ruby-lang.org/">Try Ruby</a></p>
-          <p><a ahref="https://try.ruby-lang.org/playground/">Try Ruby playground</a></p>
-          <h4>Design</h4>
-          <p><a ahref="https://coolors.co/">Colour pattle generator</a></p>
-          <p><a ahref="https://colorswall.com/collections?tab=views">Colorswall - popular colour pattles from brands to
-              flags</a></p>
-          <p><a ahref="https://pixabay.com/">Pixabay - free stock images</a></p>
-          <a ahref="https://www.canva.com/">Canva - make awesome graphics in minutes</a>
-          <p><a ahref="https://www.flaticon.com/">Flat Icon - Free icons</a></p>
-          <p><a ahref="https://fontawesome.com/">Font awesome - Easily add icons to websites & apps</a></p>
-          <h4>Frameworks</h4>
-          <p><a ahref="https://getbootstrap.com/">Repsonsive CSS Framework Bootstrap</a></p>
-          <h4>Libraries</h4>
-          <h4>Content</h4>
-          <p><a href="https://appsumo.com/products/marketplace-wordhero/">AI Content Writer</a></p>
+          <div id="leftload"></div>
         </div>
       </aside>
       <div class="col-sm-8 text-center">
@@ -864,25 +805,7 @@
 
       <aside id="right-bar">
         <div class="col-sm-2 sidenav-right">
-          <h3>Quick References</h3>
-          <div class="well">
-            <h4>Playing around with JS <i class="fa-brands fa-js"></i></h4>
-            <p>Go to the <a href="proNotes.js">script.js</a> file to view/customise the Javascript of this page</p>
-          </div>
-          <div class="well">
-            <h4>Opening the DevTools console (chrome) <i class="fa-brands fa-chrome"></i></h4>
-            <p>
-              <kdb>Control</kdb>+Shift+J
-            </p>
-          </div>
-          <div class="well">
-            <h4>Open terminal on VScode <img src="images/vscode.svg" width="15.75px" height="18px"></h4>
-            <p>Control+Shift+`</p>
-          </div>
-          <div class="well">
-            <h4>Opening files browser from <i class="fa-brands fa-ubuntu"></i></h4>
-            <p><mark>nautilus .</mark></p>
-          </div>
+          <div id="rightload"></div>
         </div>
       </aside>
     </div>
@@ -904,7 +827,14 @@
       <a href="https://codebeautify.org/jsvalidate" target="_blank"><i class="fa-brands fa-square-js"></i></a>
     </div>
   </footer>
-  <script src="proNotes.js"></script>
+  <script>
+    $(function () {
+      $("#includedContent").load("b.html");
+      $("#leftload").load("side-left.html");
+      $("#rightload").load("side-right.html");
+      $("#js-nav").load("navbar.html");
+    });
+  </script>
 </body>
 
 </html>

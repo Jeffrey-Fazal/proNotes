@@ -1,0 +1,44 @@
+<!--Adding the Nav bar
+create at the top of the document <div id="js-nav"></div>
+add $("#js-nav").load("navbar.html"); or $("#js-nav").load("../navbar.html"); to the script at the end of the document.
+To Do: Find a dynamic way to make the list item toggled as active 
+-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="brand-link" href="index.html">proNotes v2</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="index.html">Home</a></li>-->
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../HTML/html.html">HTML</a></li>
+        <li><a href="../CSS/css.html">CSS</a></li>
+        <li><a href="../JS/js.html">JS</a></li>
+        <li><a href="../TS/ts.html">Type Script</a></li>
+        <li><a href="../Ruby/ruby.html">Ruby</a></li>
+
+
+        <li><a href="../codesnips.html">Code Snipppets</a></li>
+        <li><a href="../webdev.html">Web Dev Notes</a></li>
+        <li><a href="../Linux OS and Shell/shell.html">Shell</a></li>
+
+        <li><a href="../React/react.html">React</a></li>
+        <li><a href="../Projects/projects.html">Projects</a></li>
+        <li><a href="../workshops/workshop.html">Workshops</a></li>
+        <li><a href="../Version Control/vc.html"></a>VC</li>
+      </ul>
+      <!-- Right login button/icon
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+          <div id="js-nav"></div>
+          $("#js-nav").load("navbar.html");
+        </ul> -->
+    </div>
+  </div>
+</nav>

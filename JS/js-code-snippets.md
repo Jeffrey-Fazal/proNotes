@@ -90,3 +90,26 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 ```
+
+# Creating elements and classes
+
+```js
+function createDuck () {
+//      i.   create the element
+const duck = document.createElement("div");
+//      ii.  add a class to the element
+duck.classList.add("duck");
+//      iii. append the element to the body
+document.body.appendChild(duck);
+}
+```
+
+[HTML DOM Document createElement() Method](https://www.w3schools.com/jsref/met_document_createelement.asp)
+
+https://stackoverflow.com/questions/507138/how-to-add-a-class-to-a-given-element
+
+# Finding the filename of a page
+
+```js
+
+```

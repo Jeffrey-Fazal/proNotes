@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>proNotes</title>
+  <title>Home | proNotes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,17 +10,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/9e4a8cb2c2.js" crossorigin="anonymous"></script>
-  <script src="jquery.js"></script> 
-  <script> 
-  $(function(){
-    $("#includedContent").load("b.html"); 
-  });
-  </script> 
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-  <nav class="navbar navbar-inverse">
+<div id="js-nav"></div>
+<!--   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,57 +31,28 @@
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Code Snipppets</a></li>
           <li><a href="webdev.html">Web Dev Notes</a></li>
-          <li><a href="shell/">Shell</a></li>
-          <li><a href="HTML/">HTML</a></li>
-          <li><a href="CSS/">CSS</a></li>
-          <li><a href="JS/">JS</a></li>
-          <li><a href="TS/">Type Script</a></li>
-          <li><a href="Ruby/">Ruby</a></li>
-          <li><a href="React/">React</a></li>
-          <li><a href="Projects/">Projects</a></li>
-          <li><a href="Projects/">Workshops</a></li>
-          <li><a href="#validation">Contact</a></li>
+          <li><a href="shell/shell.html">Shell</a></li>
+          <li><a href="HTML/html.html">HTML</a></li>
+          <li><a href="CSS/css.html">CSS</a></li>
+          <li><a href="JS/js.html">JS</a></li>
+          <li><a href="TS/ts.html">Type Script</a></li>
+          <li><a href="Ruby/ruby.html">Ruby</a></li>
+          <li><a href="React/react.html">React</a></li>
+          <li><a href="Projects/projects.html">Projects</a></li>
+          <li><a href="workshops/workshop.html">Workshops</a></li>
         </ul>
-        <!-- login link & icon
           <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
-        </ul> -->
+        </ul> 
       </div>
     </div>
   </nav>
-
+ -->
   <div class="container-fluid text-center">
     <div class="row content">
       <aside id="left-bar">
         <div class="col-sm-2 sidenav-left">
-          <h3>Resources</h3>
-          <p><a href="https://learnxinyminutes.com/">Learn X in Y</a></p>
-          <h4>Programming</h4>
-          <p></p>
-          <h4>Javascript</h4>
-          <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JS reference - MDN</a></p>
-          <p><a href="https://www.w3schools.com/jsref/default.asp">W3C JS Topics</a></p>
-          <p><a href="https://quickref.me/javascript">Cheatsheets <br> (JS & > 20 others)</a></p>
-          <p><a href="https://learnjavascript.online/app.html?id=1436">Learn JS Online</a></p>
-          <h4>Sandboxs & Code Sharing</h4>
-          <p><a href="https://playcode.io/my-projects">Playcode - avoid crashing your browser with this sandbox</a></p>
-          <p><a href="https://codepen.io/">Code pen - easily share and test code</a></p>
-          <p><a href="https://codesandbox.io/">Codesandbox (create a sandbox from a git repo!)</a></p>
-          <p><a ahref="https://try.ruby-lang.org/">Try Ruby</a></p>
-          <p><a ahref="https://try.ruby-lang.org/playground/">Try Ruby playground</a></p>
-          <h4>Design</h4>
-          <p><a ahref="https://coolors.co/">Colour pattle generator</a></p>
-          <p><a ahref="https://colorswall.com/collections?tab=views">Colorswall - popular colour pattles from brands to
-              flags</a></p>
-          <p><a ahref="https://pixabay.com/">Pixabay - free stock images</a></p>
-          <a ahref="https://www.canva.com/">Canva - make awesome graphics in minutes</a>
-          <p><a ahref="https://www.flaticon.com/">Flat Icon - Free icons</a></p>
-          <p><a ahref="https://fontawesome.com/">Font awesome - Easily add icons to websites & apps</a></p>
-          <h4>Frameworks</h4>
-          <p><a ahref="https://getbootstrap.com/">Repsonsive CSS Framework Bootstrap</a></p>
-          <h4>Libraries</h4>
-          <h4>Content</h4>
-          <p><a href="https://appsumo.com/products/marketplace-wordhero/">AI Content Writer</a></p>
+          <div id="leftload"></div>
         </div>
       </aside>
       <div class="col-sm-8 text-center">
@@ -98,26 +65,63 @@
             necessary elements included for you to get started on building a website. A script tag has also been added
             so that you can instantly begin experimenting with code</p>
         </section>
-        <!-- <section id="new-section">
-          <h2>Title</h2>
-          <p>Add a paragraph</p>
-        </section> -->
-        <section id="add-section">
-          <h2>Inserting HTML into other pages</h2>
-          <p> A discuson at <a href="https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file">stack overflow</a> came up with the idea of using Jquery to add html documents into documents using the load function. The text below is imported from b.html</p>
-          <div id="includedContent"></div>
+        <section id="getting-started">
+          <h2>Getting Started</h2>
+          <p>In order to get started, you'll need:</p>
+          <ul>
+            <li>A browser - Chrome</li>
+            <li>A text editor - Visual Studio Code</li>
+            <li>Basic Knowledge of shell - zsh</li>
+            <li>Version control - git</li>
+          </ul>
         </section>
-        <section id="output-text">
-          <h2>Changing text with JS</h2>
-          <p>
-            The well Bootstrap well style provides a nice way to output text
+        <section>
+          <h2>Customising the enviroment</h2>
+          <p></p>
+          <ul>
+            <li>Install <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">live
+                server</a> on VS code</li>
+            <li>Add <a href="aliases.zsh">aliases</a> by creating a file in /home/jeffrey/.oh-my-zsh/custom/aliases.zsh
+            </li>
+          </ul>
+        </section>
+        <section id="setup">
+          <h2>First steps into web dev</h2>
+          <p>You'll need to learn the basics of HTML, CSS and JS.</p>
+          <p>Bootstrap is a framework that you can use to quickly build a website. This page itself is created with
+            Bootstrap by embeding the CDN link into the head</p>
+          <p>Choosing a suitable hosting is critcal, for the purposes of this website we are using a shared hosting
+            setup with Direct Admin</p>
+          <p>Direct Admin allows you to manually fetch and deply git servers</p>
+        </section>
+        <section id="resources">
+          <h2>Handy Resources</h2>
+          <p>Check out fontawesome to use all these cool graphics</p>
+          <p>You'll need to use CSS to change the colours, look at the pronotes.css for tips</p>
+        </section>
+        <section id="vscode">
+          <h2>VS Code</h2>
+          <h3>Keyboard Short Cuts</h3>
+          <p><a
+              href="https://developerf1.com/snippet/edit-multiple-lines-at-once-in-vs-code#:~:text=Just%20like%20other%20modern%20IDEs,edit%20mode%20simply%20press%20Esc%20.">Multiple
+              lines of code</a> can be changed by using <mark>CTRL + ALT + UP/Down</mark></p>
+          <p>Easily rename HTML tags with <kdb>F2</kdb>
           </p>
-          <div class="well well-lg">
-            <p id="wellOne">Change Text Here with the wellOne id <br>(the id is for the paragraph elemented nested in a
-              div.)</p>
-          </div>
-          <div class="start-button">
-            <button type="button" class="btn btn-dark" onclick="startbtn()" id="startbtn">Change Text</button>
+          <p><a href="https://stackoverflow.com/questions/40155875/how-to-do-tag-wrapping-in-vs-code">Wrap HTML in
+              code</a> by using the: <code>Emmet: Wrap with Abbreviation</code> with <kdb>ctrl</kdb> + <kdb>shift</kdb>
+            + <kdb>p</kdb>
+          </p>
+          <h4>Extensions</h4>
+          <div>
+            <p><strong>Name:</strong> Live Preview<br />
+              <strong>Id:</strong> ms-vscode.live-server<br />
+              <strong>Description:</strong> Hosts a local server in your workspace for you to preview your webpages
+              on.<br />
+              <strong>Version:</strong> 0.4.4<br />
+              <strong>Publisher:</strong> Microsoft
+              VS Marketplace Link: <a
+                href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server</a>
+            </p>
           </div>
         </section>
         <section id="git">
@@ -145,14 +149,11 @@
                   request</a> (PR request)</li>
             </ul>
           </div>
-
-
           <h3>Useful git commands</h3>
           <div class=well well-mg>
             <mark>git remote -v</mark> # shows url for remotes (useful when working in multiple repos and you are not
             sure
             where you are<br />
-
             <a
               href="https://www.freecodecamp.org/news/git-cheat-sheet-and-best-practices-c6ce5321f52/#:~:text=You%20can%20view%20that%20origin,URL%20of%20the%20remote%20repo.">See:
               other useful Git resoures.</a>
@@ -160,80 +161,21 @@
             <p><mark>gh pr create</mark> # create a pull request interactively</p>
             <p><mark>git push -f</mark> forces git to push the (use with caution)</p>
           </div>
+          <h3>Git and Hosting</h3>
+          <p>Some hosts already have a plugin installed and others have the ability to install git on it.</p>
+          <p>Git is not a backup, file/image host or deployment service.</p>
         </section>
-        <section id="id-table">
-          <h2>Selecting elements with ID's</h2>
-          <p>Here is a list of ID's that can be used to manipulate elements of the page. </p>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Element #</th>
-                <th scope="col">ID</th>
-                <th scope="col">HTML Tag</th>
-                <th scope="col">Location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>brand-link</td>
-                <td>
-                  <pre><code>&lt;a></code></pre>
-                </td>
-                <td>Top left of page <br>(placeholder text: Bootstrap Template)</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>startbtn</td>
-                <td>
-                  <pre><code>&lt;button></code></pre>
-                </td>
-                <td>Grey button with the text start</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>wellOne</td>
-                <td>
-                  <pre><code>&lt;p></code></pre>
-                </td>
-                <td>Underneath the H2 'output for text'</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>h1-tag</td>
-                <td>
-                  <pre><code>&lt;h1></code></pre>
-                </td>
-                <td>First heading in body</td>
-              </tr>
-            </tbody>
-          </table>
+        <section id="naming-conventions">
+          <h2>Naming Conventions</h2>
+          <p>Camel case always starts out lowercase with each word delimited by a capital letter (like personOne, textUtil, thingsToDo)</p>
+          <p>Pascal case is similar to camel case, but the first letter is always capitalized (like PersonOne, TextUtil, ThingsToDo)</p>
+          <p>Snake case means that we delimit words with an underscore (like person_one, text_util, things_to_do)</p>
+          <p><a href="https://khalilstemmler.com/blogs/camel-case-snake-case-pascal-case/">Cases in different languages</a></p>
         </section>
-        <section id="vscode">
-          <h2>VS Code</h2>
-          <h3>Keyboard Short Cuts</h3>
-          <p><a
-              href="https://developerf1.com/snippet/edit-multiple-lines-at-once-in-vs-code#:~:text=Just%20like%20other%20modern%20IDEs,edit%20mode%20simply%20press%20Esc%20.">Multiple
-              lines of code</a> can be changed by using <mark>CTRL + ALT + UP/Down</mark></p>
-          <p>Easily rename HTML tags with <kdb>F2</kdb>
-          </p>
-          <p><a href="https://stackoverflow.com/questions/40155875/how-to-do-tag-wrapping-in-vs-code">Wrap HTML in
-              code</a> by using the: <code>Emmet: Wrap with Abbreviation</code> with <kdb>ctrl</kdb> + <kdb>shift</kdb>
-            + <kdb>p</kdb>
-          </p>
-          <h4>Extensions</h4>
-          <div>
-            <p><strong>Name:</strong> Live Preview<br />
-              <strong>Id:</strong> ms-vscode.live-server<br />
-              <strong>Description:</strong> Hosts a local server in your workspace for you to preview your webpages
-              on.<br />
-              <strong>Version:</strong> 0.4.4<br />
-              <strong>Publisher:</strong> Microsoft
-              VS Marketplace Link: <a
-                href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server</a>
-            </p>
-          </div>
-        </section>
+        <!-- <section id="new-section">
+          <h2>Title</h2>
+          <p>Add a paragraph</p>
+        </section> -->
         <section id="online-ide">
           <h2>J Doodle</h2>
           <p>A place to easily try out code, right here on this page</p>
@@ -241,32 +183,16 @@
             data-libs="mavenlib1, mavenlib2">
             console.log('The J doogle plugin supports nodejs, ruby, python and a few other languages')
           </div>
-          <a ahref="https://docs.jdoodle.com/integrating-compiler-ide-to-your-application/languages-and-versions-supported-in-api-and-plugins">J Doodlge language options</a>
+          <a
+            ahref="https://docs.jdoodle.com/integrating-compiler-ide-to-your-application/languages-and-versions-supported-in-api-and-plugins">J
+            Doodlge language options</a>
           <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
         </section>
       </div>
 
       <aside id="right-bar">
         <div class="col-sm-2 sidenav-right">
-          <h3>Quick References</h3>
-          <div class="well">
-            <h4>Playing around with JS <i class="fa-brands fa-js"></i></h4>
-            <p>Go to the <a href="proNotes.js">script.js</a> file to view/customise the Javascript of this page</p>
-          </div>
-          <div class="well">
-            <h4>Opening the DevTools console (chrome) <i class="fa-brands fa-chrome"></i></h4>
-            <p>
-              <kdb>Control</kdb>+Shift+J
-            </p>
-          </div>
-          <div class="well">
-            <h4>Open terminal on VScode <img src="images/vscode.svg" width="15.75px" height="18px"></h4>
-            <p>Control+Shift+`</p>
-          </div>
-          <div class="well">
-            <h4>Opening files browser from <i class="fa-brands fa-ubuntu"></i></h4>
-            <p><mark>nautilus .</mark></p>
-          </div>
+          <div id="rightload"></div>
         </div>
       </aside>
     </div>
@@ -289,8 +215,15 @@
     </div>
   </footer>
   <script src="proNotes.js"></script>
+  <script>
+    $(function () {
+      $("#includedContent").load("b.html");
+      $("#leftload").load("side-left.html");
+      $("#rightload").load("side-right.html");
+      $("#js-nav").load("navbar.html");
+    });
+  </script>
 </body>
 
 </html>
-
 <!-- Semantic: section, header, footer, nav, main, article and aside-->

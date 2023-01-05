@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>proNotes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../proNotes.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/9e4a8cb2c2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="js-nav"></div>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <aside id="left-bar">
+        <div class="col-sm-2 sidenav-left">
+          <div id="leftload"></div>
+        </div>
+      </aside>
+      <div class="col-sm-8 text-center">
+        <!-- <section id="welcome">
+          <h1 id="h1-tag">Welcome</h1>
+          <p id="intro">Welcome to the world of web development! Building a website can be a daunting task, but with the
+            help of this template you will be able to work confidently and safely in the realms of HTML, JavaScript and
+            CSS.</p>
+          <p>This template provides you with a safe playground to practise your coding skills, with all the
+            necessary elements included for you to get started on building a website. A script tag has also been added
+            so that you can instantly begin experimenting with code</p>
+        </section> -->
+
+        <!-- <section id="new-section">
+          <h2>Title</h2>
+          <p>Add a paragraph</p>
+        </section> -->
+        <section id="online-ide">
+          <h2>J Doodle</h2>
+          <p>A place to easily try out code, right here on this page</p>
+          <div data-pym-src='https://www.jdoodle.com/plugin' data-language="nodejs" data-version-index="4"
+            data-libs="mavenlib1, mavenlib2">
+            console.log('The J doogle plugin supports nodejs, ruby, python and a few other languages')
+          </div>
+          <a ahref="https://docs.jdoodle.com/integrating-compiler-ide-to-your-application/languages-and-versions-supported-in-api-and-plugins">J
+            Doodlge language options</a>
+          <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+        </section>
+      </div>
+
+      <aside id="right-bar">
+        <div class="col-sm-2 sidenav-right">
+          <div id="rightload"></div>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>A template for beginer programs v 1 by <a href="https://github.com/Jeffrey-Fazal">Jeffrey-Fazal </a><svg
+        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+      </svg></p>
+    <div id="validation">
+      <h6>Validate your code:</h6>
+      <a href="https://validator.w3.org/nu/" target="_blank"><i class="fa-brands fa-html5"></i></a>
+      <a href="https://jigsaw.w3.org/css-validator/validator.html.en" target="_blank"><i
+          class="fa-brands fa-css3-alt"></i></a>
+      <a href="https://codebeautify.org/jsvalidate" target="_blank"><i class="fa-brands fa-square-js"></i></a>
+    </div>
+  </footer>
+  <script src="../proNotes.js"></script>
+  <script>
+    $(function () {
+      $("#leftload").load("../side-left.html");
+      $("#rightload").load("../side-right.html");
+      $("#js-nav").load("../navbar.html"); 
+    });
+  </script>
+</body>
+
+</html>
+<!-- Semantic: section, header, footer, nav, main, article and aside-->

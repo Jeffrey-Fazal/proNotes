@@ -482,4 +482,22 @@ for (let slot of satchel) {
 
 ## Array methods
 
+[Array - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+### Finding the number of items in an array
+
+```js
+// 'fruits' array created using array literal notation.
+const fruits = ['Apple', 'Banana'];
+console.log(fruits.length);
+
+// Output: 2
+```
+
+![JS Array Method in emjois](jsarrayCheatsheet.png "JS Array Methods")
+
 ## String methods
+
+[String - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+![Javascript String Methods](/mnt/SharedDrive/myFolder/proNotes/JS/jsstrings.png)
